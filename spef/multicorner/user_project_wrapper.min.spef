@@ -1334,20 +1334,20 @@ wbs_we_i I
 3 *53:13 *646:io_in[2] 1.42213 
 *END
 
-*D_NET *54 0.0118093
+*D_NET *54 0.0118132
 *CONN
 *P io_in[31] I
 *I *646:io_in[3] I *D caravel_ips
 *CAP
-1 io_in[31] 0.000659216
+1 io_in[31] 0.000700912
 2 *646:io_in[3] 0.000448559
-3 *54:9 0.00443578
-4 *54:7 0.00464644
-5 *54:9 *130:9 0.00161931
+3 *54:13 0.00441818
+4 *54:11 0.00467053
+5 *54:13 *130:9 0.00157499
 *RES
-1 io_in[31] *54:7 2.0048 
-2 *54:7 *54:9 79.665 
-3 *54:9 *646:io_in[3] 1.4804 
+1 io_in[31] *54:11 2.16693 
+2 *54:11 *54:13 79.155 
+3 *54:13 *646:io_in[3] 1.4804 
 *END
 
 *D_NET *55 0.0126556
@@ -1359,21 +1359,21 @@ wbs_we_i I
 2 *646:io_in[4] 0.000627689
 3 *55:9 0.00585069
 4 *55:7 0.00570013
-5 *55:9 *131:13 0
+5 *55:9 *131:9 0
 *RES
 1 io_in[32] *55:7 1.6552 
 2 *55:7 *55:9 91.395 
 3 *55:9 *646:io_in[4] 1.83 
 *END
 
-*D_NET *56 0.0160606
+*D_NET *56 0.0160624
 *CONN
 *P io_in[33] I
 *I *646:io_in[5] I *D caravel_ips
 *CAP
 1 io_in[33] 0.00047713
-2 *646:io_in[5] 0.000636676
-3 *56:9 0.00571532
+2 *646:io_in[5] 0.000637581
+3 *56:9 0.00571623
 4 *56:7 0.00555578
 5 *56:9 *93:9 0
 6 *56:9 *132:9 0.00367573
@@ -1427,22 +1427,22 @@ wbs_we_i I
 3 *59:9 0.00511113
 4 *59:7 0.00495924
 5 *59:9 *96:9 0.00204074
-6 *59:9 *135:13 0
+6 *59:9 *135:9 0
 *RES
 1 io_in[36] *59:7 1.6552 
 2 *59:7 *59:9 90.375 
 3 *59:9 *646:io_in[8] 1.83 
 *END
 
-*D_NET *60 0.00834846
+*D_NET *60 0.00829854
 *CONN
 *P io_in[37] I
 *I *646:io_in[9] I *D caravel_ips
 *CAP
 1 io_in[37] 0.00141321
-2 *646:io_in[9] 0.0025497
-3 *60:11 0.00396291
-4 *646:io_in[9] *97:9 0.000422636
+2 *646:io_in[9] 0.0025709
+3 *60:11 0.00398411
+4 *646:io_in[9] *97:9 0.000330317
 *RES
 1 io_in[37] *60:11 15.5913 
 2 *60:11 *646:io_in[9] 42.1621 
@@ -1451,362 +1451,370 @@ wbs_we_i I
 *D_NET *88 0.00446036
 *CONN
 *P io_oeb[28] O
-*I *646:io_oeb[0] I *D caravel_ips
+*I *646:io_oeb[0] O *D caravel_ips
 *CAP
 1 io_oeb[28] 0.00223018
 2 *646:io_oeb[0] 0.00223018
 *RES
-1 io_oeb[28] *646:io_oeb[0] 22.9702 
+1 *646:io_oeb[0] io_oeb[28] 22.9702 
 *END
 
 *D_NET *89 0.00578601
 *CONN
 *P io_oeb[29] O
-*I *646:io_oeb[1] I *D caravel_ips
+*I *646:io_oeb[1] O *D caravel_ips
 *CAP
 1 io_oeb[29] 0.00289301
 2 *646:io_oeb[1] 0.00289301
 *RES
-1 io_oeb[29] *646:io_oeb[1] 34.7002 
+1 *646:io_oeb[1] io_oeb[29] 34.7002 
 *END
 
 *D_NET *91 0.0069271
 *CONN
 *P io_oeb[30] O
-*I *646:io_oeb[2] I *D caravel_ips
+*I *646:io_oeb[2] O *D caravel_ips
 *CAP
 1 io_oeb[30] 0.00346355
 2 *646:io_oeb[2] 0.00346355
 *RES
-1 io_oeb[30] *646:io_oeb[2] 47.0435 
+1 *646:io_oeb[2] io_oeb[30] 47.0435 
 *END
 
 *D_NET *92 0.0084973
 *CONN
 *P io_oeb[31] O
-*I *646:io_oeb[3] I *D caravel_ips
+*I *646:io_oeb[3] O *D caravel_ips
 *CAP
 1 io_oeb[31] 0.000450237
 2 *646:io_oeb[3] 0.000636676
-3 *92:9 0.00379841
-4 *92:7 0.00361197
+3 *92:9 0.00361197
+4 *92:7 0.00379841
 5 *92:9 *130:9 0
 *RES
-1 io_oeb[31] *92:7 1.6552 
+1 *646:io_oeb[3] *92:7 1.83 
 2 *92:7 *92:9 55.185 
-3 *92:9 *646:io_oeb[3] 1.83 
+3 *92:9 io_oeb[31] 1.6552 
 *END
 
-*D_NET *93 0.0103271
+*D_NET *93 0.0103826
 *CONN
 *P io_oeb[32] O
-*I *646:io_oeb[4] I *D caravel_ips
+*I *646:io_oeb[4] O *D caravel_ips
 *CAP
-1 io_oeb[32] 0.000667223
+1 io_oeb[32] 0.000725001
 2 *646:io_oeb[4] 0.000457567
-3 *93:9 0.00379386
-4 *93:7 0.00400351
-5 *93:9 *131:11 0.000229994
-6 *93:9 *131:13 0.00117498
+3 *93:9 0.00403123
+4 *93:7 0.0037638
+5 *93:9 io_out[32] 0.000229994
+6 *93:9 *131:9 0.00117498
 7 *56:9 *93:9 0
 *RES
-1 io_oeb[32] *93:7 2.0048 
-2 *93:7 *93:9 66.915 
-3 *93:9 *646:io_oeb[4] 1.4804 
+1 *646:io_oeb[4] *93:7 1.4804 
+2 *93:7 *93:9 66.405 
+3 *93:9 io_oeb[32] 2.2252 
 *END
 
 *D_NET *94 0.0129873
 *CONN
 *P io_oeb[33] O
-*I *646:io_oeb[5] I *D caravel_ips
+*I *646:io_oeb[5] O *D caravel_ips
 *CAP
 1 io_oeb[33] 0.000552361
 2 *646:io_oeb[5] 0.000567136
-3 *94:9 0.00419236
-4 *94:7 0.00417759
+3 *94:9 0.00417759
+4 *94:7 0.00419236
 5 *94:9 *132:9 0.00261517
 6 *57:9 *94:9 0.000882673
 *RES
-1 io_oeb[33] *94:7 1.77173 
+1 *646:io_oeb[5] *94:7 1.71347 
 2 *94:7 *94:9 79.155 
-3 *94:9 *646:io_oeb[5] 1.71347 
+3 *94:9 io_oeb[33] 1.77173 
 *END
 
 *D_NET *95 0.0150455
 *CONN
 *P io_oeb[34] O
-*I *646:io_oeb[6] I *D caravel_ips
+*I *646:io_oeb[6] O *D caravel_ips
 *CAP
 1 io_oeb[34] 0.000545689
 2 *646:io_oeb[6] 0.000567136
-3 *95:9 0.00443044
-4 *95:7 0.004409
+3 *95:9 0.004409
+4 *95:7 0.00443044
 5 *95:9 *133:9 0.00363154
 6 *58:9 *95:9 0.00146171
 *RES
-1 io_oeb[34] *95:7 1.77173 
+1 *646:io_oeb[6] *95:7 1.71347 
 2 *95:7 *95:9 90.885 
-3 *95:9 *646:io_oeb[6] 1.71347 
+3 *95:9 io_oeb[34] 1.77173 
 *END
 
 *D_NET *96 0.0171435
 *CONN
 *P io_oeb[35] O
-*I *646:io_oeb[7] I *D caravel_ips
+*I *646:io_oeb[7] O *D caravel_ips
 *CAP
 1 io_oeb[35] 0.000545689
 2 *646:io_oeb[7] 0.000567136
-3 *96:9 0.00466059
-4 *96:7 0.00463914
+3 *96:9 0.00463914
+4 *96:7 0.00466059
 5 *96:9 *134:9 0.00469024
 6 *59:9 *96:9 0.00204074
 *RES
-1 io_oeb[35] *96:7 1.77173 
+1 *646:io_oeb[7] *96:7 1.71347 
 2 *96:7 *96:9 102.615 
-3 *96:9 *646:io_oeb[7] 1.71347 
+3 *96:9 io_oeb[35] 1.77173 
 *END
 
-*D_NET *97 0.0103874
+*D_NET *97 0.0103896
 *CONN
 *P io_oeb[36] O
-*I *646:io_oeb[8] I *D caravel_ips
+*I *646:io_oeb[8] O *D caravel_ips
 *CAP
-1 io_oeb[36] 0.000651985
+1 io_oeb[36] 0.000734157
 2 *646:io_oeb[8] 0.000457567
-3 *97:9 0.00364442
-4 *97:7 0.00383884
-5 *97:9 *135:11 0.000152597
-6 *97:9 *135:13 0.0012193
-7 *646:io_in[9] *97:9 0.000422636
+3 *97:9 0.00388614
+4 *97:7 0.00360955
+5 *97:9 io_out[36] 0.000152597
+6 *97:9 *135:9 0.0012193
+7 *646:io_in[9] *97:9 0.000330317
 *RES
-1 io_oeb[36] *97:7 2.0048 
-2 *97:7 *97:9 65.895 
-3 *97:9 *646:io_oeb[8] 1.4804 
+1 *646:io_oeb[8] *97:7 1.4804 
+2 *97:7 *97:9 64.875 
+3 *97:9 io_oeb[36] 2.25307 
 *END
 
 *D_NET *98 0.00549493
 *CONN
 *P io_oeb[37] O
-*I *646:io_oeb[9] I *D caravel_ips
+*I *646:io_oeb[9] O *D caravel_ips
 *CAP
 1 io_oeb[37] 0.00274746
 2 *646:io_oeb[9] 0.00274746
 *RES
-1 io_oeb[37] *646:io_oeb[9] 32.1502 
+1 *646:io_oeb[9] io_oeb[37] 32.1502 
 *END
 
 *D_NET *126 0.00584423
 *CONN
 *P io_out[28] O
-*I *646:io_out[0] I *D caravel_ips
+*I *646:io_out[0] O *D caravel_ips
 *CAP
 1 io_out[28] 0.00292211
 2 *646:io_out[0] 0.00292211
 *RES
-1 io_out[28] *646:io_out[0] 35.2102 
+1 *646:io_out[0] io_out[28] 35.2102 
 *END
 
 *D_NET *127 0.00699817
 *CONN
 *P io_out[29] O
-*I *646:io_out[1] I *D caravel_ips
+*I *646:io_out[1] O *D caravel_ips
 *CAP
 1 io_out[29] 0.00349908
 2 *646:io_out[1] 0.00349908
 *RES
-1 io_out[29] *646:io_out[1] 47.5535 
+1 *646:io_out[1] io_out[29] 47.5535 
 *END
 
 *D_NET *129 0.0084973
 *CONN
 *P io_out[30] O
-*I *646:io_out[2] I *D caravel_ips
+*I *646:io_out[2] O *D caravel_ips
 *CAP
 1 io_out[30] 0.000450237
 2 *646:io_out[2] 0.000636676
-3 *129:9 0.00379841
-4 *129:7 0.00361197
+3 *129:9 0.00361197
+4 *129:7 0.00379841
 5 *53:11 *129:9 0
 *RES
-1 io_out[30] *129:7 1.6552 
+1 *646:io_out[2] *129:7 1.83 
 2 *129:7 *129:9 55.185 
-3 *129:9 *646:io_out[2] 1.83 
+3 *129:9 io_out[30] 1.6552 
 *END
 
-*D_NET *130 0.010509
+*D_NET *130 0.010526
 *CONN
 *P io_out[31] O
-*I *646:io_out[3] I *D caravel_ips
+*I *646:io_out[3] O *D caravel_ips
 *CAP
-1 io_out[31] 0.000682059
+1 io_out[31] 0.000730986
 2 *646:io_out[3] 0.000428285
-3 *130:9 0.00376279
-4 *130:7 0.00401657
-5 *54:9 *130:9 0.00161931
+3 *130:9 0.0040472
+4 *130:7 0.0037445
+5 *54:13 *130:9 0.00157499
 6 *92:9 *130:9 0
 *RES
-1 io_out[31] *130:7 2.06307 
-2 *130:7 *130:9 67.425 
-3 *130:9 *646:io_out[3] 1.42213 
+1 *646:io_out[3] *130:7 1.42213 
+2 *130:7 *130:9 66.915 
+3 *130:9 io_out[31] 2.2252 
 *END
 
 *D_NET *131 0.0117786
 *CONN
 *P io_out[32] O
-*I *646:io_out[4] I *D caravel_ips
+*I *646:io_out[4] O *D caravel_ips
 *CAP
 1 io_out[32] 0.000908105
 2 *646:io_out[4] 0.000428285
-3 *131:13 0.0042787
-4 *131:11 0.00475852
-5 *55:9 *131:13 0
-6 *93:9 *131:11 0.000229994
-7 *93:9 *131:13 0.00117498
+3 *131:9 0.00475852
+4 *131:7 0.0042787
+5 *55:9 *131:9 0
+6 *93:9 io_out[32] 0.000229994
+7 *93:9 *131:9 0.00117498
 *RES
-1 io_out[32] *131:11 7.26633 
-2 *131:11 *131:13 74.565 
-3 *131:13 *646:io_out[4] 1.42213 
+1 *646:io_out[4] *131:7 1.42213 
+2 *131:7 *131:9 74.565 
+3 *131:9 io_out[32] 7.26633 
 *END
 
 *D_NET *132 0.0160631
 *CONN
 *P io_out[33] O
-*I *646:io_out[5] I *D caravel_ips
+*I *646:io_out[5] O *D caravel_ips
 *CAP
 1 io_out[33] 0.000514078
 2 *646:io_out[5] 0.000597412
-3 *132:9 0.00437204
-4 *132:7 0.00428871
+3 *132:9 0.00428871
+4 *132:7 0.00437204
 5 *56:9 *132:9 0.00367573
 6 *94:9 *132:9 0.00261517
 *RES
-1 io_out[33] *132:7 1.71347 
+1 *646:io_out[5] *132:7 1.77173 
 2 *132:7 *132:9 91.395 
-3 *132:9 *646:io_out[5] 1.77173 
+3 *132:9 io_out[33] 1.71347 
 *END
 
 *D_NET *133 0.0184971
 *CONN
 *P io_out[34] O
-*I *646:io_out[6] I *D caravel_ips
+*I *646:io_out[6] O *D caravel_ips
 *CAP
 1 io_out[34] 0.000514078
 2 *646:io_out[6] 0.000597412
-3 *133:9 0.00457266
-4 *133:7 0.00448932
+3 *133:9 0.00448932
+4 *133:7 0.00457266
 5 *57:9 *133:9 0.00469209
 6 *95:9 *133:9 0.00363154
 *RES
-1 io_out[34] *133:7 1.71347 
+1 *646:io_out[6] *133:7 1.77173 
 2 *133:7 *133:9 103.125 
-3 *133:9 *646:io_out[6] 1.77173 
+3 *133:9 io_out[34] 1.71347 
 *END
 
 *D_NET *134 0.020967
 *CONN
 *P io_out[35] O
-*I *646:io_out[7] I *D caravel_ips
+*I *646:io_out[7] O *D caravel_ips
 *CAP
 1 io_out[35] 0.000480513
 2 *646:io_out[7] 0.000597412
-3 *134:9 0.00478153
-4 *134:7 0.00466463
+3 *134:9 0.00466463
+4 *134:7 0.00478153
 5 *58:9 *134:9 0.00575264
 6 *96:9 *134:9 0.00469024
 *RES
-1 io_out[35] *134:7 1.71347 
+1 *646:io_out[7] *134:7 1.77173 
 2 *134:7 *134:9 115.365 
-3 *134:9 *646:io_out[7] 1.77173 
+3 *134:9 io_out[35] 1.71347 
 *END
 
 *D_NET *135 0.0116639
 *CONN
 *P io_out[36] O
-*I *646:io_out[8] I *D caravel_ips
+*I *646:io_out[8] O *D caravel_ips
 *CAP
 1 io_out[36] 0.000851087
 2 *646:io_out[8] 0.000428285
-3 *135:13 0.00429492
-4 *135:11 0.00471772
-5 *59:9 *135:13 0
-6 *97:9 *135:11 0.000152597
-7 *97:9 *135:13 0.0012193
+3 *135:9 0.00471772
+4 *135:7 0.00429492
+5 *59:9 *135:9 0
+6 *97:9 io_out[36] 0.000152597
+7 *97:9 *135:9 0.0012193
 *RES
-1 io_out[36] *135:11 5.73633 
-2 *135:11 *135:13 75.075 
-3 *135:13 *646:io_out[8] 1.42213 
+1 *646:io_out[8] *135:7 1.42213 
+2 *135:7 *135:9 75.075 
+3 *135:9 io_out[36] 5.73633 
 *END
 
 *D_NET *136 0.00683903
 *CONN
 *P io_out[37] O
-*I *646:io_out[9] I *D caravel_ips
+*I *646:io_out[9] O *D caravel_ips
 *CAP
 1 io_out[37] 0.00341952
 2 *646:io_out[9] 0.00341952
 *RES
-1 io_out[37] *646:io_out[9] 45.5135 
+1 *646:io_out[9] io_out[37] 45.5135 
 *END
 
-*D_NET *529 0.311192
+*D_NET *529 0.311162
 *CONN
 *P user_irq[0] O
-*I *646:irq[0] I *D caravel_ips
+*I *646:irq[0] O *D caravel_ips
 *CAP
 1 user_irq[0] 0.000575842
-2 *646:irq[0] 0.00189085
-3 *529:9 0.0622337
-4 *529:7 0.0609187
-5 *646:irq[0] *530:13 0.00138981
-6 *529:9 *530:9 0.184183
+2 *646:irq[0] 0.00195907
+3 *529:13 0.0608947
+4 *529:11 0.0622779
+5 *529:11 *530:15 0.000728052
+6 *529:11 *530:19 0.00061854
+7 *529:13 *530:21 0.184108
 *RES
-1 user_irq[0] *529:7 11.87 
-2 *529:7 *529:9 1693.71 
-3 *529:9 *646:irq[0] 32.2215 
+1 *646:irq[0] *529:11 32.338 
+2 *529:11 *529:13 1693.02 
+3 *529:13 user_irq[0] 11.87 
 *END
 
-*D_NET *530 0.429021
+*D_NET *530 0.428734
 *CONN
 *P user_irq[1] O
-*I *646:irq[1] I *D caravel_ips
+*I *646:irq[1] O *D caravel_ips
 *CAP
 1 user_irq[1] 0.00055665
-2 *646:irq[1] 0.000806427
-3 *530:13 0.00265978
-4 *530:11 0.00185336
-5 *530:9 0.0245349
-6 *530:7 0.0250916
-7 *530:9 *531:9 0.184744
-8 *530:13 *531:13 0.00320169
-9 *646:irq[0] *530:13 0.00138981
-10 *529:9 *530:9 0.184183
+2 *646:irq[1] 0.00124339
+3 *530:21 0.0250701
+4 *530:19 0.0246635
+5 *530:15 0.00157418
+6 *530:11 0.00266757
+7 *530:11 *531:9 0.000583536
+8 *530:15 *531:9 0.00134466
+9 *530:15 *531:15 0.00068437
+10 *530:19 *531:15 0.000260164
+11 *530:21 *531:17 0.184631
+12 *529:11 *530:15 0.000728052
+13 *529:11 *530:19 0.00061854
+14 *529:13 *530:21 0.184108
 *RES
-1 user_irq[1] *530:7 11.615 
-2 *530:7 *530:9 1698.89 
-3 *530:9 *530:11 2 
-4 *530:11 *530:13 62.4525 
-5 *530:13 *646:irq[1] 2.58747 
+1 *646:irq[1] *530:11 14.2275 
+2 *530:11 *530:15 44.895 
+3 *530:15 *530:19 9.3725 
+4 *530:19 *530:21 1697.85 
+5 *530:21 user_irq[1] 11.615 
 *END
 
-*D_NET *531 0.32063
+*D_NET *531 0.320372
 *CONN
 *P user_irq[2] O
-*I *646:irq[2] I *D caravel_ips
+*I *646:irq[2] O *D caravel_ips
 *CAP
 1 user_irq[2] 0.000518504
 2 *646:irq[2] 0.000753653
-3 *531:13 0.00498479
-4 *531:11 0.00423114
-5 *531:9 0.0608391
-6 *531:7 0.0613576
-7 *530:9 *531:9 0.184744
-8 *530:13 *531:13 0.00320169
+3 *531:17 0.0613409
+4 *531:15 0.0614385
+5 *531:9 0.00433936
+6 *531:7 0.00447692
+7 *530:11 *531:9 0.000583536
+8 *530:15 *531:9 0.00134466
+9 *530:15 *531:15 0.00068437
+10 *530:19 *531:15 0.000260164
+11 *530:21 *531:17 0.184631
 *RES
-1 user_irq[2] *531:7 11.36 
-2 *531:7 *531:9 1704.06 
-3 *531:9 *531:11 2 
-4 *531:11 *531:13 97.3875 
-5 *531:13 *646:irq[2] 2.47093 
+1 *646:irq[2] *531:7 2.47093 
+2 *531:7 *531:9 82.095 
+3 *531:9 *531:15 18.1925 
+4 *531:15 *531:17 1703.37 
+5 *531:17 user_irq[2] 11.36 
 *END
 
 *D_NET *540 0.0069773
@@ -1816,7 +1824,7 @@ wbs_we_i I
 *CAP
 1 wb_clk_i 0.00206796
 2 *646:wb_clk_i 0.00206796
-3 *646:wb_clk_i *646:wbs_ack_o 0.00166274
+3 *646:wb_clk_i wbs_ack_o 0.00166274
 4 *646:wb_clk_i *646:wbs_cyc_i 0.00117865
 *RES
 1 wb_clk_i *646:wb_clk_i 19.8259 
@@ -1829,7 +1837,7 @@ wbs_we_i I
 *CAP
 1 wb_rst_i 0.00281999
 2 *646:wb_rst_i 0.00281999
-3 *646:wb_rst_i *646:wbs_ack_o 0
+3 *646:wb_rst_i wbs_ack_o 0
 4 *646:wb_rst_i *646:wbs_we_i 0
 *RES
 1 wb_rst_i *646:wb_rst_i 19.4725 
@@ -1838,17 +1846,17 @@ wbs_we_i I
 *D_NET *542 0.00653205
 *CONN
 *P wbs_ack_o O
-*I *646:wbs_ack_o I *D caravel_ips
+*I *646:wbs_ack_o O *D caravel_ips
 *CAP
 1 wbs_ack_o 0.00203836
 2 *646:wbs_ack_o 0.00203836
-3 *646:wbs_ack_o *646:wbs_adr_i[0] 0.00027499
-4 *646:wbs_ack_o *646:wbs_cyc_i 0.000454372
-5 *646:wbs_ack_o *646:wbs_dat_i[0] 6.32198e-05
-6 *646:wb_clk_i *646:wbs_ack_o 0.00166274
-7 *646:wb_rst_i *646:wbs_ack_o 0
+3 wbs_ack_o *646:wbs_adr_i[0] 0.00027499
+4 wbs_ack_o *646:wbs_cyc_i 0.000454372
+5 wbs_ack_o *646:wbs_dat_i[0] 6.32198e-05
+6 *646:wb_clk_i wbs_ack_o 0.00166274
+7 *646:wb_rst_i wbs_ack_o 0
 *RES
-1 wbs_ack_o *646:wbs_ack_o 20.5228 
+1 *646:wbs_ack_o wbs_ack_o 20.5228 
 *END
 
 *D_NET *543 0.0059414
@@ -1862,7 +1870,7 @@ wbs_we_i I
 4 *646:wbs_adr_i[0] *646:wbs_dat_i[0] 0.00191759
 5 *646:wbs_adr_i[0] *646:wbs_dat_i[1] 6.46833e-05
 6 *646:wbs_adr_i[0] *646:wbs_we_i 0
-7 *646:wbs_ack_o *646:wbs_adr_i[0] 0.00027499
+7 wbs_ack_o *646:wbs_adr_i[0] 0.00027499
 *RES
 1 wbs_adr_i[0] *646:wbs_adr_i[0] 20.2898 
 *END
@@ -1874,24 +1882,24 @@ wbs_we_i I
 *CAP
 1 wbs_adr_i[10] 0.00149327
 2 *646:wbs_adr_i[10] 0.00149327
-3 *646:wbs_adr_i[10] *646:wbs_adr_i[11] 2.99518e-06
-4 *646:wbs_adr_i[10] *646:wbs_dat_i[10] 0.00089437
-5 *646:wbs_adr_i[10] *646:wbs_dat_o[10] 0
+3 *646:wbs_adr_i[10] wbs_dat_o[10] 0
+4 *646:wbs_adr_i[10] *646:wbs_adr_i[11] 2.99518e-06
+5 *646:wbs_adr_i[10] *646:wbs_dat_i[10] 0.00089437
 *RES
 1 wbs_adr_i[10] *646:wbs_adr_i[10] 17.8448 
 *END
 
-*D_NET *545 0.00404217
+*D_NET *545 0.00390497
 *CONN
 *P wbs_adr_i[11] I
 *I *646:wbs_adr_i[11] I *D caravel_ips
 *CAP
-1 wbs_adr_i[11] 0.00157015
-2 *646:wbs_adr_i[11] 0.00157015
-3 *646:wbs_adr_i[11] *646:wbs_dat_i[10] 0.000248898
-4 *646:wbs_adr_i[11] *646:wbs_dat_i[11] 0.000649969
-5 *646:wbs_adr_i[11] *646:wbs_dat_o[10] 0
-6 *646:wbs_adr_i[11] *646:wbs_dat_o[11] 0
+1 wbs_adr_i[11] 0.00149185
+2 *646:wbs_adr_i[11] 0.00149185
+3 *646:wbs_adr_i[11] wbs_dat_o[10] 0
+4 *646:wbs_adr_i[11] wbs_dat_o[11] 0
+5 *646:wbs_adr_i[11] *646:wbs_dat_i[10] 0.000248898
+6 *646:wbs_adr_i[11] *646:wbs_dat_i[11] 0.000669366
 7 *646:wbs_adr_i[10] *646:wbs_adr_i[11] 2.99518e-06
 *RES
 1 wbs_adr_i[11] *646:wbs_adr_i[11] 18.4835 
@@ -1904,10 +1912,10 @@ wbs_we_i I
 *CAP
 1 wbs_adr_i[12] 0.00136376
 2 *646:wbs_adr_i[12] 0.00136376
-3 *646:wbs_adr_i[12] *646:wbs_dat_i[11] 0.000176881
-4 *646:wbs_adr_i[12] *646:wbs_dat_i[12] 0.00027412
-5 *646:wbs_adr_i[12] *646:wbs_dat_o[11] 0
-6 *646:wbs_adr_i[12] *646:wbs_dat_o[12] 0.000126552
+3 *646:wbs_adr_i[12] wbs_dat_o[11] 0
+4 *646:wbs_adr_i[12] wbs_dat_o[12] 0.000126552
+5 *646:wbs_adr_i[12] *646:wbs_dat_i[11] 0.000176881
+6 *646:wbs_adr_i[12] *646:wbs_dat_i[12] 0.00027412
 *RES
 1 wbs_adr_i[12] *646:wbs_adr_i[12] 18.3087 
 *END
@@ -1931,9 +1939,9 @@ wbs_we_i I
 *CAP
 1 wbs_adr_i[14] 0.00139061
 2 *646:wbs_adr_i[14] 0.00139061
-3 *646:wbs_adr_i[14] *646:wbs_dat_i[13] 0.000361302
-4 *646:wbs_adr_i[14] *646:wbs_dat_i[14] 0
-5 *646:wbs_adr_i[14] *646:wbs_dat_o[13] 0
+3 *646:wbs_adr_i[14] wbs_dat_o[13] 0
+4 *646:wbs_adr_i[14] *646:wbs_dat_i[13] 0.000361302
+5 *646:wbs_adr_i[14] *646:wbs_dat_i[14] 0
 *RES
 1 wbs_adr_i[14] *646:wbs_adr_i[14] 16.9088 
 *END
@@ -1945,23 +1953,23 @@ wbs_we_i I
 *CAP
 1 wbs_adr_i[15] 0.00146371
 2 *646:wbs_adr_i[15] 0.00146371
-3 *646:wbs_adr_i[15] *646:wbs_dat_i[14] 0
-4 *646:wbs_adr_i[15] *646:wbs_dat_i[15] 0
-5 *646:wbs_adr_i[15] *646:wbs_dat_o[14] 0
+3 *646:wbs_adr_i[15] wbs_dat_o[14] 0
+4 *646:wbs_adr_i[15] *646:wbs_dat_i[14] 0
+5 *646:wbs_adr_i[15] *646:wbs_dat_i[15] 0
 *RES
 1 wbs_adr_i[15] *646:wbs_adr_i[15] 16.7923 
 *END
 
-*D_NET *550 0.00282921
+*D_NET *550 0.00267448
 *CONN
 *P wbs_adr_i[16] I
 *I *646:wbs_adr_i[16] I *D caravel_ips
 *CAP
-1 wbs_adr_i[16] 0.0012855
-2 *646:wbs_adr_i[16] 0.0012855
-3 *646:wbs_adr_i[16] *646:wbs_dat_i[16] 4.00592e-05
-4 *646:wbs_adr_i[16] *646:wbs_dat_o[15] 0.000218151
-5 *646:wbs_adr_i[16] *646:wbs_dat_o[16] 0
+1 wbs_adr_i[16] 0.00120711
+2 *646:wbs_adr_i[16] 0.00120711
+3 *646:wbs_adr_i[16] wbs_dat_o[15] 0.000220209
+4 *646:wbs_adr_i[16] wbs_dat_o[16] 0
+5 *646:wbs_adr_i[16] *646:wbs_dat_i[16] 4.00592e-05
 *RES
 1 wbs_adr_i[16] *646:wbs_adr_i[16] 17.726 
 *END
@@ -1973,8 +1981,8 @@ wbs_we_i I
 *CAP
 1 wbs_adr_i[17] 0.00118551
 2 *646:wbs_adr_i[17] 0.00118551
-3 *646:wbs_adr_i[17] *646:wbs_dat_i[17] 0.000127084
-4 *646:wbs_adr_i[17] *646:wbs_dat_o[16] 0
+3 *646:wbs_adr_i[17] wbs_dat_o[16] 0
+4 *646:wbs_adr_i[17] *646:wbs_dat_i[17] 0.000127084
 *RES
 1 wbs_adr_i[17] *646:wbs_adr_i[17] 17.6095 
 *END
@@ -1986,7 +1994,7 @@ wbs_we_i I
 *CAP
 1 wbs_adr_i[18] 0.0011274
 2 *646:wbs_adr_i[18] 0.0011274
-3 *646:wbs_adr_i[18] *646:wbs_dat_o[17] 0.000111481
+3 *646:wbs_adr_i[18] wbs_dat_o[17] 0.000111481
 *RES
 1 wbs_adr_i[18] *646:wbs_adr_i[18] 17.4347 
 *END
@@ -1998,8 +2006,8 @@ wbs_we_i I
 *CAP
 1 wbs_adr_i[19] 0.00109198
 2 *646:wbs_adr_i[19] 0.00109198
-3 *646:wbs_adr_i[19] *646:wbs_dat_i[19] 2.99518e-06
-4 *646:wbs_adr_i[19] *646:wbs_dat_o[18] 4.55864e-06
+3 *646:wbs_adr_i[19] wbs_dat_o[18] 4.55864e-06
+4 *646:wbs_adr_i[19] *646:wbs_dat_i[19] 2.99518e-06
 *RES
 1 wbs_adr_i[19] *646:wbs_adr_i[19] 17.3182 
 *END
@@ -2031,13 +2039,14 @@ wbs_we_i I
 1 wbs_adr_i[20] *646:wbs_adr_i[20] 18.3225 
 *END
 
-*D_NET *556 0.00190412
+*D_NET *556 0.00187166
 *CONN
 *P wbs_adr_i[21] I
 *I *646:wbs_adr_i[21] I *D caravel_ips
 *CAP
-1 wbs_adr_i[21] 0.00095206
-2 *646:wbs_adr_i[21] 0.00095206
+1 wbs_adr_i[21] 0.000935831
+2 *646:wbs_adr_i[21] 0.000935831
+3 *646:wbs_adr_i[21] wbs_dat_o[20] 0
 *RES
 1 wbs_adr_i[21] *646:wbs_adr_i[21] 17.1825 
 *END
@@ -2049,7 +2058,7 @@ wbs_we_i I
 *CAP
 1 wbs_adr_i[22] 0.000891591
 2 *646:wbs_adr_i[22] 0.000891591
-3 *646:wbs_adr_i[22] *646:wbs_dat_o[21] 0
+3 *646:wbs_adr_i[22] wbs_dat_o[21] 0
 *RES
 1 wbs_adr_i[22] *646:wbs_adr_i[22] 16.2825 
 *END
@@ -2155,8 +2164,8 @@ wbs_we_i I
 *CAP
 1 wbs_adr_i[30] 0.00122215
 2 *646:wbs_adr_i[30] 0.00122215
-3 *646:wbs_adr_i[30] *646:wbs_dat_i[30] 9.48251e-05
-4 *646:wbs_adr_i[30] *646:wbs_dat_o[29] 5.21698e-05
+3 *646:wbs_adr_i[30] wbs_dat_o[29] 5.21698e-05
+4 *646:wbs_adr_i[30] *646:wbs_dat_i[30] 9.48251e-05
 *RES
 1 wbs_adr_i[30] *646:wbs_adr_i[30] 17.4347 
 *END
@@ -2168,41 +2177,42 @@ wbs_we_i I
 *CAP
 1 wbs_adr_i[31] 0.00122845
 2 *646:wbs_adr_i[31] 0.00122845
-3 *646:wbs_adr_i[31] *646:wbs_dat_i[31] 0.000127084
-4 *646:wbs_adr_i[31] *646:wbs_dat_o[30] 6.11552e-05
+3 *646:wbs_adr_i[31] wbs_dat_o[30] 6.11552e-05
+4 *646:wbs_adr_i[31] *646:wbs_dat_i[31] 0.000127084
 *RES
 1 wbs_adr_i[31] *646:wbs_adr_i[31] 17.5512 
 *END
 
-*D_NET *568 0.00534252
+*D_NET *568 0.00558394
 *CONN
 *P wbs_adr_i[3] I
 *I *646:wbs_adr_i[3] I *D caravel_ips
 *CAP
-1 wbs_adr_i[3] 0.00159065
-2 *646:wbs_adr_i[3] 0.00159065
-3 *646:wbs_adr_i[3] *646:wbs_adr_i[4] 0.000235051
-4 *646:wbs_adr_i[3] *646:wbs_dat_i[2] 0.000709714
-5 *646:wbs_adr_i[3] *646:wbs_dat_i[3] 0.000172044
-6 *646:wbs_adr_i[3] *646:wbs_dat_o[3] 0.00101232
+1 wbs_adr_i[3] 0.00174027
+2 *646:wbs_adr_i[3] 0.00174027
+3 *646:wbs_adr_i[3] wbs_dat_o[3] 0.000985203
+4 *646:wbs_adr_i[3] *646:wbs_adr_i[4] 0.000235051
+5 *646:wbs_adr_i[3] *646:wbs_dat_i[2] 0.000697404
+6 *646:wbs_adr_i[3] *646:wbs_dat_i[3] 0.000153645
 7 *646:wbs_adr_i[2] *646:wbs_adr_i[3] 3.20913e-05
 *RES
 1 wbs_adr_i[3] *646:wbs_adr_i[3] 19.7071 
 *END
 
-*D_NET *569 0.00487456
+*D_NET *569 0.00500956
 *CONN
 *P wbs_adr_i[4] I
 *I *646:wbs_adr_i[4] I *D caravel_ips
 *CAP
-1 wbs_adr_i[4] 0.00163577
-2 *646:wbs_adr_i[4] 0.00163577
-3 *646:wbs_adr_i[4] *646:wbs_dat_i[4] 0.00136798
-4 *646:wbs_adr_i[4] *646:wbs_dat_i[5] 0
-5 *646:wbs_adr_i[4] *646:wbs_dat_o[3] 0
-6 *646:wbs_adr_i[3] *646:wbs_adr_i[4] 0.000235051
+1 wbs_adr_i[4] 0.00170394
+2 *646:wbs_adr_i[4] 0.00170394
+3 *646:wbs_adr_i[4] wbs_dat_o[3] 0
+4 *646:wbs_adr_i[4] *646:wbs_dat_i[4] 0.00136663
+5 *646:wbs_adr_i[4] *646:wbs_dat_i[5] 0
+6 *646:wbs_adr_i[4] *646:wbs_sel_i[3] 0
+7 *646:wbs_adr_i[3] *646:wbs_adr_i[4] 0.000235051
 *RES
-1 wbs_adr_i[4] *646:wbs_adr_i[4] 20.029 
+1 wbs_adr_i[4] *646:wbs_adr_i[4] 20.4208 
 *END
 
 *D_NET *570 0.00465843
@@ -2212,43 +2222,43 @@ wbs_we_i I
 *CAP
 1 wbs_adr_i[5] 0.00142112
 2 *646:wbs_adr_i[5] 0.00142112
-3 *646:wbs_adr_i[5] *646:wbs_adr_i[6] 9.2075e-05
-4 *646:wbs_adr_i[5] *646:wbs_dat_i[4] 0.000203914
-5 *646:wbs_adr_i[5] *646:wbs_dat_i[6] 0.00018834
-6 *646:wbs_adr_i[5] *646:wbs_dat_o[4] 0.00133186
-7 *646:wbs_adr_i[5] *646:wbs_dat_o[5] 0
+3 *646:wbs_adr_i[5] wbs_dat_o[4] 0.00133186
+4 *646:wbs_adr_i[5] wbs_dat_o[5] 0
+5 *646:wbs_adr_i[5] *646:wbs_adr_i[6] 9.2075e-05
+6 *646:wbs_adr_i[5] *646:wbs_dat_i[4] 0.000203914
+7 *646:wbs_adr_i[5] *646:wbs_dat_i[6] 0.00018834
 *RES
 1 wbs_adr_i[5] *646:wbs_adr_i[5] 18.6023 
 *END
 
-*D_NET *571 0.00444174
+*D_NET *571 0.00431709
 *CONN
 *P wbs_adr_i[6] I
 *I *646:wbs_adr_i[6] I *D caravel_ips
 *CAP
-1 wbs_adr_i[6] 0.00178166
-2 *646:wbs_adr_i[6] 0.00178166
-3 *646:wbs_adr_i[6] *646:wbs_adr_i[7] 0
-4 *646:wbs_adr_i[6] *646:wbs_dat_i[7] 0
-5 *646:wbs_adr_i[6] *646:wbs_dat_o[4] 0
-6 *646:wbs_adr_i[6] *646:wbs_dat_o[5] 0.000626615
-7 *646:wbs_adr_i[6] *646:wbs_dat_o[6] 0.000159734
+1 wbs_adr_i[6] 0.00171207
+2 *646:wbs_adr_i[6] 0.00171207
+3 *646:wbs_adr_i[6] wbs_dat_o[4] 0
+4 *646:wbs_adr_i[6] wbs_dat_o[5] 0.000626615
+5 *646:wbs_adr_i[6] wbs_dat_o[6] 0.000174255
+6 *646:wbs_adr_i[6] *646:wbs_adr_i[7] 0
+7 *646:wbs_adr_i[6] *646:wbs_dat_i[7] 0
 8 *646:wbs_adr_i[5] *646:wbs_adr_i[6] 9.2075e-05
 *RES
 1 wbs_adr_i[6] *646:wbs_adr_i[6] 19.241 
 *END
 
-*D_NET *572 0.00408918
+*D_NET *572 0.00396231
 *CONN
 *P wbs_adr_i[7] I
 *I *646:wbs_adr_i[7] I *D caravel_ips
 *CAP
-1 wbs_adr_i[7] 0.00182407
-2 *646:wbs_adr_i[7] 0.00182407
-3 *646:wbs_adr_i[7] *646:wbs_dat_i[6] 0.000336162
-4 *646:wbs_adr_i[7] *646:wbs_dat_i[7] 0
-5 *646:wbs_adr_i[7] *646:wbs_dat_o[5] 0
-6 *646:wbs_adr_i[7] *646:wbs_dat_o[6] 0.000104868
+1 wbs_adr_i[7] 0.00175408
+2 *646:wbs_adr_i[7] 0.00175408
+3 *646:wbs_adr_i[7] wbs_dat_o[5] 0
+4 *646:wbs_adr_i[7] wbs_dat_o[6] 0.000104868
+5 *646:wbs_adr_i[7] *646:wbs_dat_i[6] 0.000349277
+6 *646:wbs_adr_i[7] *646:wbs_dat_i[7] 0
 7 *646:wbs_adr_i[6] *646:wbs_adr_i[7] 0
 *RES
 1 wbs_adr_i[7] *646:wbs_adr_i[7] 17.9576 
@@ -2261,9 +2271,9 @@ wbs_we_i I
 *CAP
 1 wbs_adr_i[8] 0.00148328
 2 *646:wbs_adr_i[8] 0.00148328
-3 *646:wbs_adr_i[8] *646:wbs_dat_i[7] 0.00055704
-4 *646:wbs_adr_i[8] *646:wbs_dat_o[7] 0.000241666
-5 *646:wbs_adr_i[8] *646:wbs_dat_o[8] 0.000482312
+3 *646:wbs_adr_i[8] wbs_dat_o[7] 0.000241666
+4 *646:wbs_adr_i[8] wbs_dat_o[8] 0.000482312
+5 *646:wbs_adr_i[8] *646:wbs_dat_i[7] 0.00055704
 *RES
 1 wbs_adr_i[8] *646:wbs_adr_i[8] 18.9496 
 *END
@@ -2275,8 +2285,8 @@ wbs_we_i I
 *CAP
 1 wbs_adr_i[9] 0.00149997
 2 *646:wbs_adr_i[9] 0.00149997
-3 *646:wbs_adr_i[9] *646:wbs_dat_o[8] 0.000905808
-4 *646:wbs_adr_i[9] *646:wbs_dat_o[9] 0
+3 *646:wbs_adr_i[9] wbs_dat_o[8] 0.000905808
+4 *646:wbs_adr_i[9] wbs_dat_o[9] 0
 *RES
 1 wbs_adr_i[9] *646:wbs_adr_i[9] 18.7748 
 *END
@@ -2288,11 +2298,11 @@ wbs_we_i I
 *CAP
 1 wbs_cyc_i 0.00171295
 2 *646:wbs_cyc_i 0.00171295
-3 *646:wbs_cyc_i *646:wbs_dat_i[0] 0.000167787
-4 *646:wbs_cyc_i *646:wbs_dat_o[0] 1.02564e-05
+3 *646:wbs_cyc_i wbs_dat_o[0] 1.02564e-05
+4 *646:wbs_cyc_i *646:wbs_dat_i[0] 0.000167787
 5 *646:wbs_cyc_i *646:wbs_stb_i 0.00195791
-6 *646:wb_clk_i *646:wbs_cyc_i 0.00117865
-7 *646:wbs_ack_o *646:wbs_cyc_i 0.000454372
+6 wbs_ack_o *646:wbs_cyc_i 0.000454372
+7 *646:wb_clk_i *646:wbs_cyc_i 0.00117865
 *RES
 1 wbs_cyc_i *646:wbs_cyc_i 20.4646 
 *END
@@ -2304,9 +2314,9 @@ wbs_we_i I
 *CAP
 1 wbs_dat_i[0] 0.00146826
 2 *646:wbs_dat_i[0] 0.00146826
-3 *646:wbs_dat_i[0] *646:wbs_dat_o[0] 0.00189515
-4 *646:wbs_dat_i[0] *646:wbs_dat_o[1] 0
-5 *646:wbs_ack_o *646:wbs_dat_i[0] 6.32198e-05
+3 *646:wbs_dat_i[0] wbs_dat_o[0] 0.00189515
+4 *646:wbs_dat_i[0] wbs_dat_o[1] 0
+5 wbs_ack_o *646:wbs_dat_i[0] 6.32198e-05
 6 *646:wbs_adr_i[0] *646:wbs_dat_i[0] 0.00191759
 7 *646:wbs_cyc_i *646:wbs_dat_i[0] 0.000167787
 *RES
@@ -2320,25 +2330,24 @@ wbs_we_i I
 *CAP
 1 wbs_dat_i[10] 0.00147771
 2 *646:wbs_dat_i[10] 0.00147771
-3 *646:wbs_dat_i[10] *646:wbs_dat_o[10] 0
+3 *646:wbs_dat_i[10] wbs_dat_o[10] 0
 4 *646:wbs_adr_i[10] *646:wbs_dat_i[10] 0.00089437
 5 *646:wbs_adr_i[11] *646:wbs_dat_i[10] 0.000248898
 *RES
 1 wbs_dat_i[10] *646:wbs_dat_i[10] 18.6 
 *END
 
-*D_NET *578 0.00381919
+*D_NET *578 0.0036923
 *CONN
 *P wbs_dat_i[11] I
 *I *646:wbs_dat_i[11] I *D caravel_ips
 *CAP
-1 wbs_dat_i[11] 0.00149617
-2 *646:wbs_dat_i[11] 0.00149617
-3 *646:wbs_dat_i[11] *646:wbs_dat_i[12] 0
-4 *646:wbs_dat_i[11] *646:wbs_dat_o[10] 0
-5 *646:wbs_dat_i[11] *646:wbs_dat_o[11] 0
-6 *646:wbs_adr_i[11] *646:wbs_dat_i[11] 0.000649969
-7 *646:wbs_adr_i[12] *646:wbs_dat_i[11] 0.000176881
+1 wbs_dat_i[11] 0.00142303
+2 *646:wbs_dat_i[11] 0.00142303
+3 *646:wbs_dat_i[11] wbs_dat_o[10] 0
+4 *646:wbs_dat_i[11] *646:wbs_dat_i[12] 0
+5 *646:wbs_adr_i[11] *646:wbs_dat_i[11] 0.000669366
+6 *646:wbs_adr_i[12] *646:wbs_dat_i[11] 0.000176881
 *RES
 1 wbs_dat_i[11] *646:wbs_dat_i[11] 18.1385 
 *END
@@ -2350,7 +2359,7 @@ wbs_we_i I
 *CAP
 1 wbs_dat_i[12] 0.00125548
 2 *646:wbs_dat_i[12] 0.00125548
-3 *646:wbs_dat_i[12] *646:wbs_dat_o[12] 0.000556333
+3 *646:wbs_dat_i[12] wbs_dat_o[12] 0.000556333
 4 *646:wbs_adr_i[12] *646:wbs_dat_i[12] 0.00027412
 5 *646:wbs_adr_i[13] *646:wbs_dat_i[12] 0.00027266
 6 *646:wbs_dat_i[11] *646:wbs_dat_i[12] 0
@@ -2365,8 +2374,8 @@ wbs_we_i I
 *CAP
 1 wbs_dat_i[13] 0.0012841
 2 *646:wbs_dat_i[13] 0.0012841
-3 *646:wbs_dat_i[13] *646:wbs_dat_o[12] 2.33678e-05
-4 *646:wbs_dat_i[13] *646:wbs_dat_o[13] 0.000136233
+3 *646:wbs_dat_i[13] wbs_dat_o[12] 2.33678e-05
+4 *646:wbs_dat_i[13] wbs_dat_o[13] 0.000136233
 5 *646:wbs_adr_i[14] *646:wbs_dat_i[13] 0.000361302
 *RES
 1 wbs_dat_i[13] *646:wbs_dat_i[13] 17.3787 
@@ -2379,8 +2388,8 @@ wbs_we_i I
 *CAP
 1 wbs_dat_i[14] 0.00124857
 2 *646:wbs_dat_i[14] 0.00124857
-3 *646:wbs_dat_i[14] *646:wbs_dat_o[13] 0.000101117
-4 *646:wbs_dat_i[14] *646:wbs_dat_o[14] 0.000369452
+3 *646:wbs_dat_i[14] wbs_dat_o[13] 0.000101117
+4 *646:wbs_dat_i[14] wbs_dat_o[14] 0.000369452
 5 *646:wbs_adr_i[14] *646:wbs_dat_i[14] 0
 6 *646:wbs_adr_i[15] *646:wbs_dat_i[14] 0
 *RES
@@ -2394,21 +2403,21 @@ wbs_we_i I
 *CAP
 1 wbs_dat_i[15] 0.00135632
 2 *646:wbs_dat_i[15] 0.00135632
-3 *646:wbs_dat_i[15] *646:wbs_dat_o[15] 0.000253345
+3 *646:wbs_dat_i[15] wbs_dat_o[15] 0.000253345
 4 *646:wbs_adr_i[15] *646:wbs_dat_i[15] 0
 *RES
 1 wbs_dat_i[15] *646:wbs_dat_i[15] 17.8426 
 *END
 
-*D_NET *583 0.00256948
+*D_NET *583 0.00256457
 *CONN
 *P wbs_dat_i[16] I
 *I *646:wbs_dat_i[16] I *D caravel_ips
 *CAP
-1 wbs_dat_i[16] 0.00119203
-2 *646:wbs_dat_i[16] 0.00119203
-3 *646:wbs_dat_i[16] *646:wbs_dat_o[15] 0
-4 *646:wbs_dat_i[16] *646:wbs_dat_o[16] 0.000145355
+1 wbs_dat_i[16] 0.00118958
+2 *646:wbs_dat_i[16] 0.00118958
+3 *646:wbs_dat_i[16] wbs_dat_o[15] 0
+4 *646:wbs_dat_i[16] wbs_dat_o[16] 0.000145355
 5 *646:wbs_adr_i[16] *646:wbs_dat_i[16] 4.00592e-05
 *RES
 1 wbs_dat_i[16] *646:wbs_dat_i[16] 17.6678 
@@ -2421,7 +2430,7 @@ wbs_we_i I
 *CAP
 1 wbs_dat_i[17] 0.00114947
 2 *646:wbs_dat_i[17] 0.00114947
-3 *646:wbs_dat_i[17] *646:wbs_dat_o[17] 6.32198e-05
+3 *646:wbs_dat_i[17] wbs_dat_o[17] 6.32198e-05
 4 *646:wbs_adr_i[17] *646:wbs_dat_i[17] 0.000127084
 *RES
 1 wbs_dat_i[17] *646:wbs_dat_i[17] 17.5512 
@@ -2434,7 +2443,7 @@ wbs_we_i I
 *CAP
 1 wbs_dat_i[18] 0.00111231
 2 *646:wbs_dat_i[18] 0.00111231
-3 *646:wbs_dat_i[18] *646:wbs_dat_o[18] 0.000111481
+3 *646:wbs_dat_i[18] wbs_dat_o[18] 0.000111481
 *RES
 1 wbs_dat_i[18] *646:wbs_dat_i[18] 16.6212 
 *END
@@ -2458,9 +2467,9 @@ wbs_we_i I
 *CAP
 1 wbs_dat_i[1] 0.00139311
 2 *646:wbs_dat_i[1] 0.00139311
-3 *646:wbs_dat_i[1] *646:wbs_dat_i[2] 0.000243842
-4 *646:wbs_dat_i[1] *646:wbs_dat_o[1] 0.00174075
-5 *646:wbs_dat_i[1] *646:wbs_dat_o[2] 0
+3 *646:wbs_dat_i[1] wbs_dat_o[1] 0.00174075
+4 *646:wbs_dat_i[1] wbs_dat_o[2] 0
+5 *646:wbs_dat_i[1] *646:wbs_dat_i[2] 0.000243842
 6 *646:wbs_dat_i[1] *646:wbs_sel_i[0] 0.0013651
 7 *646:wbs_adr_i[0] *646:wbs_dat_i[1] 6.46833e-05
 8 *646:wbs_adr_i[1] *646:wbs_dat_i[1] 0
@@ -2481,26 +2490,26 @@ wbs_we_i I
 1 wbs_dat_i[20] *646:wbs_dat_i[20] 17.6625 
 *END
 
-*D_NET *589 0.00187753
+*D_NET *589 0.00188127
 *CONN
 *P wbs_dat_i[21] I
 *I *646:wbs_dat_i[21] I *D caravel_ips
 *CAP
-1 wbs_dat_i[21] 0.000938766
-2 *646:wbs_dat_i[21] 0.000938766
+1 wbs_dat_i[21] 0.000940637
+2 *646:wbs_dat_i[21] 0.000940637
 *RES
 1 wbs_dat_i[21] *646:wbs_dat_i[21] 17.1825 
 *END
 
-*D_NET *590 0.00181441
+*D_NET *590 0.00182753
 *CONN
 *P wbs_dat_i[22] I
 *I *646:wbs_dat_i[22] I *D caravel_ips
 *CAP
-1 wbs_dat_i[22] 0.000907204
-2 *646:wbs_dat_i[22] 0.000907204
+1 wbs_dat_i[22] 0.000913764
+2 *646:wbs_dat_i[22] 0.000913764
 *RES
-1 wbs_dat_i[22] *646:wbs_dat_i[22] 16.5525 
+1 wbs_dat_i[22] *646:wbs_dat_i[22] 16.0425 
 *END
 
 *D_NET *591 0.00163313
@@ -2543,7 +2552,7 @@ wbs_we_i I
 *CAP
 1 wbs_dat_i[26] 0.00089533
 2 *646:wbs_dat_i[26] 0.00089533
-3 *646:wbs_dat_i[26] *646:wbs_dat_o[26] 0
+3 *646:wbs_dat_i[26] wbs_dat_o[26] 0
 *RES
 1 wbs_dat_i[26] *646:wbs_dat_i[26] 16.2825 
 *END
@@ -2566,7 +2575,7 @@ wbs_we_i I
 *CAP
 1 wbs_dat_i[28] 0.000992389
 2 *646:wbs_dat_i[28] 0.000992389
-3 *646:wbs_dat_i[28] *646:wbs_dat_o[28] 0
+3 *646:wbs_dat_i[28] wbs_dat_o[28] 0
 4 *646:wbs_adr_i[28] *646:wbs_dat_i[28] 0
 *RES
 1 wbs_dat_i[28] *646:wbs_dat_i[28] 18.1125 
@@ -2579,25 +2588,25 @@ wbs_we_i I
 *CAP
 1 wbs_dat_i[29] 0.0011622
 2 *646:wbs_dat_i[29] 0.0011622
-3 *646:wbs_dat_i[29] *646:wbs_dat_o[29] 4.55864e-06
+3 *646:wbs_dat_i[29] wbs_dat_o[29] 4.55864e-06
 4 *646:wbs_adr_i[29] *646:wbs_dat_i[29] 2.99518e-06
 *RES
 1 wbs_dat_i[29] *646:wbs_dat_i[29] 17.3182 
 *END
 
-*D_NET *598 0.00643782
+*D_NET *598 0.00650703
 *CONN
 *P wbs_dat_i[2] I
 *I *646:wbs_dat_i[2] I *D caravel_ips
 *CAP
-1 wbs_dat_i[2] 0.00151304
-2 *646:wbs_dat_i[2] 0.00151304
-3 *646:wbs_dat_i[2] *646:wbs_dat_i[3] 0.000222987
-4 *646:wbs_dat_i[2] *646:wbs_dat_o[1] 0.000248529
+1 wbs_dat_i[2] 0.00156029
+2 *646:wbs_dat_i[2] 0.00156029
+3 *646:wbs_dat_i[2] wbs_dat_o[1] 0.000248529
+4 *646:wbs_dat_i[2] *646:wbs_dat_i[3] 0.000210012
 5 *646:wbs_dat_i[2] *646:wbs_sel_i[1] 0.000180593
 6 *646:wbs_dat_i[2] *646:wbs_sel_i[2] 0.000196248
 7 *646:wbs_adr_i[2] *646:wbs_dat_i[2] 0.00160983
-8 *646:wbs_adr_i[3] *646:wbs_dat_i[2] 0.000709714
+8 *646:wbs_adr_i[3] *646:wbs_dat_i[2] 0.000697404
 9 *646:wbs_dat_i[1] *646:wbs_dat_i[2] 0.000243842
 *RES
 1 wbs_dat_i[2] *646:wbs_dat_i[2] 19.1267 
@@ -2610,7 +2619,7 @@ wbs_we_i I
 *CAP
 1 wbs_dat_i[30] 0.00121944
 2 *646:wbs_dat_i[30] 0.00121944
-3 *646:wbs_dat_i[30] *646:wbs_dat_o[30] 0.000107366
+3 *646:wbs_dat_i[30] wbs_dat_o[30] 0.000107366
 4 *646:wbs_adr_i[30] *646:wbs_dat_i[30] 9.48251e-05
 *RES
 1 wbs_dat_i[30] *646:wbs_dat_i[30] 16.8612 
@@ -2623,42 +2632,42 @@ wbs_we_i I
 *CAP
 1 wbs_dat_i[31] 0.00115386
 2 *646:wbs_dat_i[31] 0.00115386
-3 *646:wbs_dat_i[31] *646:wbs_dat_o[31] 0.000143096
+3 *646:wbs_dat_i[31] wbs_dat_o[31] 0.000143096
 4 *646:wbs_adr_i[31] *646:wbs_dat_i[31] 0.000127084
 *RES
 1 wbs_dat_i[31] *646:wbs_dat_i[31] 17.6095 
 *END
 
-*D_NET *601 0.00579688
+*D_NET *601 0.00612548
 *CONN
 *P wbs_dat_i[3] I
 *I *646:wbs_dat_i[3] I *D caravel_ips
 *CAP
-1 wbs_dat_i[3] 0.00128966
-2 *646:wbs_dat_i[3] 0.00128966
-3 *646:wbs_dat_i[3] *646:wbs_dat_i[4] 0.000279221
-4 *646:wbs_dat_i[3] *646:wbs_dat_o[3] 0.00148827
-5 *646:wbs_dat_i[3] *646:wbs_sel_i[2] 0.00105505
-6 *646:wbs_adr_i[3] *646:wbs_dat_i[3] 0.000172044
-7 *646:wbs_dat_i[2] *646:wbs_dat_i[3] 0.000222987
+1 wbs_dat_i[3] 0.00151198
+2 *646:wbs_dat_i[3] 0.00151198
+3 *646:wbs_dat_i[3] wbs_dat_o[3] 0.00143866
+4 *646:wbs_dat_i[3] *646:wbs_dat_i[4] 0.000271262
+5 *646:wbs_dat_i[3] *646:wbs_sel_i[2] 0.00102793
+6 *646:wbs_adr_i[3] *646:wbs_dat_i[3] 0.000153645
+7 *646:wbs_dat_i[2] *646:wbs_dat_i[3] 0.000210012
 *RES
 1 wbs_dat_i[3] *646:wbs_dat_i[3] 19.6488 
 *END
 
-*D_NET *602 0.00479913
+*D_NET *602 0.00483985
 *CONN
 *P wbs_dat_i[4] I
 *I *646:wbs_dat_i[4] I *D caravel_ips
 *CAP
-1 wbs_dat_i[4] 0.00140563
-2 *646:wbs_dat_i[4] 0.00140563
-3 *646:wbs_dat_i[4] *646:wbs_dat_i[5] 0
-4 *646:wbs_dat_i[4] *646:wbs_dat_o[3] 0.000136745
-5 *646:wbs_dat_i[4] *646:wbs_dat_o[4] 0
-6 *646:wbs_dat_i[4] *646:wbs_dat_o[5] 0
-7 *646:wbs_adr_i[4] *646:wbs_dat_i[4] 0.00136798
+1 wbs_dat_i[4] 0.00143177
+2 *646:wbs_dat_i[4] 0.00143177
+3 *646:wbs_dat_i[4] wbs_dat_o[3] 0.000134508
+4 *646:wbs_dat_i[4] wbs_dat_o[4] 0
+5 *646:wbs_dat_i[4] wbs_dat_o[5] 0
+6 *646:wbs_dat_i[4] *646:wbs_dat_i[5] 0
+7 *646:wbs_adr_i[4] *646:wbs_dat_i[4] 0.00136663
 8 *646:wbs_adr_i[5] *646:wbs_dat_i[4] 0.000203914
-9 *646:wbs_dat_i[3] *646:wbs_dat_i[4] 0.000279221
+9 *646:wbs_dat_i[3] *646:wbs_dat_i[4] 0.000271262
 *RES
 1 wbs_dat_i[4] *646:wbs_dat_i[4] 19.474 
 *END
@@ -2670,40 +2679,40 @@ wbs_we_i I
 *CAP
 1 wbs_dat_i[5] 0.0020048
 2 *646:wbs_dat_i[5] 0.0020048
-3 *646:wbs_dat_i[5] *646:wbs_dat_i[6] 0.0002046
-4 *646:wbs_dat_i[5] *646:wbs_dat_o[5] 0
+3 *646:wbs_dat_i[5] wbs_dat_o[5] 0
+4 *646:wbs_dat_i[5] *646:wbs_dat_i[6] 0.0002046
 5 *646:wbs_adr_i[4] *646:wbs_dat_i[5] 0
 6 *646:wbs_dat_i[4] *646:wbs_dat_i[5] 0
 *RES
 1 wbs_dat_i[5] *646:wbs_dat_i[5] 18.1907 
 *END
 
-*D_NET *604 0.00444136
+*D_NET *604 0.00433197
 *CONN
 *P wbs_dat_i[6] I
 *I *646:wbs_dat_i[6] I *D caravel_ips
 *CAP
-1 wbs_dat_i[6] 0.00159567
-2 *646:wbs_dat_i[6] 0.00159567
-3 *646:wbs_dat_i[6] *646:wbs_dat_o[5] 0.000122012
-4 *646:wbs_dat_i[6] *646:wbs_dat_o[6] 0.000398904
+1 wbs_dat_i[6] 0.001526
+2 *646:wbs_dat_i[6] 0.001526
+3 *646:wbs_dat_i[6] wbs_dat_o[5] 0.000122012
+4 *646:wbs_dat_i[6] wbs_dat_o[6] 0.000415733
 5 *646:wbs_adr_i[5] *646:wbs_dat_i[6] 0.00018834
-6 *646:wbs_adr_i[7] *646:wbs_dat_i[6] 0.000336162
+6 *646:wbs_adr_i[7] *646:wbs_dat_i[6] 0.000349277
 7 *646:wbs_dat_i[5] *646:wbs_dat_i[6] 0.0002046
 *RES
 1 wbs_dat_i[6] *646:wbs_dat_i[6] 19.1827 
 *END
 
-*D_NET *605 0.00479476
+*D_NET *605 0.00479393
 *CONN
 *P wbs_dat_i[7] I
 *I *646:wbs_dat_i[7] I *D caravel_ips
 *CAP
-1 wbs_dat_i[7] 0.00125439
-2 *646:wbs_dat_i[7] 0.00125439
-3 *646:wbs_dat_i[7] *646:wbs_dat_i[8] 0.000314991
-4 *646:wbs_dat_i[7] *646:wbs_dat_o[6] 0.000395438
-5 *646:wbs_dat_i[7] *646:wbs_dat_o[7] 0.00101851
+1 wbs_dat_i[7] 0.00125398
+2 *646:wbs_dat_i[7] 0.00125398
+3 *646:wbs_dat_i[7] wbs_dat_o[6] 0.000395438
+4 *646:wbs_dat_i[7] wbs_dat_o[7] 0.00101851
+5 *646:wbs_dat_i[7] *646:wbs_dat_i[8] 0.000314991
 6 *646:wbs_adr_i[6] *646:wbs_dat_i[7] 0
 7 *646:wbs_adr_i[7] *646:wbs_dat_i[7] 0
 8 *646:wbs_adr_i[8] *646:wbs_dat_i[7] 0.00055704
@@ -2718,8 +2727,8 @@ wbs_we_i I
 *CAP
 1 wbs_dat_i[8] 0.00176935
 2 *646:wbs_dat_i[8] 0.00176935
-3 *646:wbs_dat_i[8] *646:wbs_dat_i[9] 4.31293e-05
-4 *646:wbs_dat_i[8] *646:wbs_dat_o[8] 0
+3 *646:wbs_dat_i[8] wbs_dat_o[8] 0
+4 *646:wbs_dat_i[8] *646:wbs_dat_i[9] 4.31293e-05
 5 *646:wbs_dat_i[7] *646:wbs_dat_i[8] 0.000314991
 *RES
 1 wbs_dat_i[8] *646:wbs_dat_i[8] 17.7828 
@@ -2732,8 +2741,8 @@ wbs_we_i I
 *CAP
 1 wbs_dat_i[9] 0.00149763
 2 *646:wbs_dat_i[9] 0.00149763
-3 *646:wbs_dat_i[9] *646:wbs_dat_o[8] 7.20267e-05
-4 *646:wbs_dat_i[9] *646:wbs_dat_o[9] 0.000456037
+3 *646:wbs_dat_i[9] wbs_dat_o[8] 7.20267e-05
+4 *646:wbs_dat_i[9] wbs_dat_o[9] 0.000456037
 5 *646:wbs_dat_i[8] *646:wbs_dat_i[9] 4.31293e-05
 *RES
 1 wbs_dat_i[9] *646:wbs_dat_i[9] 18.7166 
@@ -2742,439 +2751,439 @@ wbs_we_i I
 *D_NET *608 0.00686088
 *CONN
 *P wbs_dat_o[0] O
-*I *646:wbs_dat_o[0] I *D caravel_ips
+*I *646:wbs_dat_o[0] O *D caravel_ips
 *CAP
 1 wbs_dat_o[0] 0.0014504
 2 *646:wbs_dat_o[0] 0.0014504
-3 *646:wbs_dat_o[0] *646:wbs_sel_i[0] 0.00187207
-4 *646:wbs_dat_o[0] *646:wbs_sel_i[1] 0
-5 *646:wbs_dat_o[0] *646:wbs_stb_i 0.000180019
-6 *646:wbs_dat_o[0] *646:wbs_we_i 2.5773e-06
-7 *646:wbs_cyc_i *646:wbs_dat_o[0] 1.02564e-05
-8 *646:wbs_dat_i[0] *646:wbs_dat_o[0] 0.00189515
+3 wbs_dat_o[0] *646:wbs_sel_i[0] 0.00187207
+4 wbs_dat_o[0] *646:wbs_sel_i[1] 0
+5 wbs_dat_o[0] *646:wbs_stb_i 0.000180019
+6 wbs_dat_o[0] *646:wbs_we_i 2.5773e-06
+7 *646:wbs_cyc_i wbs_dat_o[0] 1.02564e-05
+8 *646:wbs_dat_i[0] wbs_dat_o[0] 0.00189515
 *RES
-1 wbs_dat_o[0] *646:wbs_dat_o[0] 20.2315 
+1 *646:wbs_dat_o[0] wbs_dat_o[0] 20.2315 
 *END
 
-*D_NET *609 0.00370487
+*D_NET *609 0.00366336
 *CONN
 *P wbs_dat_o[10] O
-*I *646:wbs_dat_o[10] I *D caravel_ips
+*I *646:wbs_dat_o[10] O *D caravel_ips
 *CAP
-1 wbs_dat_o[10] 0.00184938
-2 *646:wbs_dat_o[10] 0.00184938
-3 *646:wbs_dat_o[10] *646:wbs_dat_o[9] 6.11347e-06
-4 *646:wbs_adr_i[10] *646:wbs_dat_o[10] 0
-5 *646:wbs_adr_i[11] *646:wbs_dat_o[10] 0
-6 *646:wbs_dat_i[10] *646:wbs_dat_o[10] 0
-7 *646:wbs_dat_i[11] *646:wbs_dat_o[10] 0
+1 wbs_dat_o[10] 0.00182862
+2 *646:wbs_dat_o[10] 0.00182862
+3 wbs_dat_o[10] wbs_dat_o[9] 6.11347e-06
+4 *646:wbs_adr_i[10] wbs_dat_o[10] 0
+5 *646:wbs_adr_i[11] wbs_dat_o[10] 0
+6 *646:wbs_dat_i[10] wbs_dat_o[10] 0
+7 *646:wbs_dat_i[11] wbs_dat_o[10] 0
 *RES
-1 wbs_dat_o[10] *646:wbs_dat_o[10] 17.4332 
+1 *646:wbs_dat_o[10] wbs_dat_o[10] 17.4332 
 *END
 
-*D_NET *610 0.00333454
+*D_NET *610 0.00322051
 *CONN
 *P wbs_dat_o[11] O
-*I *646:wbs_dat_o[11] I *D caravel_ips
+*I *646:wbs_dat_o[11] O *D caravel_ips
 *CAP
-1 wbs_dat_o[11] 0.00166727
-2 *646:wbs_dat_o[11] 0.00166727
-3 *646:wbs_adr_i[11] *646:wbs_dat_o[11] 0
-4 *646:wbs_adr_i[12] *646:wbs_dat_o[11] 0
-5 *646:wbs_dat_i[11] *646:wbs_dat_o[11] 0
+1 wbs_dat_o[11] 0.00161026
+2 *646:wbs_dat_o[11] 0.00161026
+3 *646:wbs_adr_i[11] wbs_dat_o[11] 0
+4 *646:wbs_adr_i[12] wbs_dat_o[11] 0
 *RES
-1 wbs_dat_o[11] *646:wbs_dat_o[11] 17.2584 
+1 *646:wbs_dat_o[11] wbs_dat_o[11] 17.2584 
 *END
 
 *D_NET *611 0.0033855
 *CONN
 *P wbs_dat_o[12] O
-*I *646:wbs_dat_o[12] I *D caravel_ips
+*I *646:wbs_dat_o[12] O *D caravel_ips
 *CAP
 1 wbs_dat_o[12] 0.00133963
 2 *646:wbs_dat_o[12] 0.00133963
-3 *646:wbs_adr_i[12] *646:wbs_dat_o[12] 0.000126552
-4 *646:wbs_dat_i[12] *646:wbs_dat_o[12] 0.000556333
-5 *646:wbs_dat_i[13] *646:wbs_dat_o[12] 2.33678e-05
+3 *646:wbs_adr_i[12] wbs_dat_o[12] 0.000126552
+4 *646:wbs_dat_i[12] wbs_dat_o[12] 0.000556333
+5 *646:wbs_dat_i[13] wbs_dat_o[12] 2.33678e-05
 *RES
-1 wbs_dat_o[12] *646:wbs_dat_o[12] 18.2504 
+1 *646:wbs_dat_o[12] wbs_dat_o[12] 18.2504 
 *END
 
 *D_NET *612 0.00278812
 *CONN
 *P wbs_dat_o[13] O
-*I *646:wbs_dat_o[13] I *D caravel_ips
+*I *646:wbs_dat_o[13] O *D caravel_ips
 *CAP
 1 wbs_dat_o[13] 0.00127539
 2 *646:wbs_dat_o[13] 0.00127539
-3 *646:wbs_adr_i[14] *646:wbs_dat_o[13] 0
-4 *646:wbs_dat_i[13] *646:wbs_dat_o[13] 0.000136233
-5 *646:wbs_dat_i[14] *646:wbs_dat_o[13] 0.000101117
+3 *646:wbs_adr_i[14] wbs_dat_o[13] 0
+4 *646:wbs_dat_i[13] wbs_dat_o[13] 0.000136233
+5 *646:wbs_dat_i[14] wbs_dat_o[13] 0.000101117
 *RES
-1 wbs_dat_o[13] *646:wbs_dat_o[13] 18.0756 
+1 *646:wbs_dat_o[13] wbs_dat_o[13] 18.0756 
 *END
 
 *D_NET *613 0.00298696
 *CONN
 *P wbs_dat_o[14] O
-*I *646:wbs_dat_o[14] I *D caravel_ips
+*I *646:wbs_dat_o[14] O *D caravel_ips
 *CAP
 1 wbs_dat_o[14] 0.00130875
 2 *646:wbs_dat_o[14] 0.00130875
-3 *646:wbs_adr_i[15] *646:wbs_dat_o[14] 0
-4 *646:wbs_dat_i[14] *646:wbs_dat_o[14] 0.000369452
+3 *646:wbs_adr_i[15] wbs_dat_o[14] 0
+4 *646:wbs_dat_i[14] wbs_dat_o[14] 0.000369452
 *RES
-1 wbs_dat_o[14] *646:wbs_dat_o[14] 17.9591 
+1 *646:wbs_dat_o[14] wbs_dat_o[14] 17.9591 
 *END
 
-*D_NET *614 0.00303713
+*D_NET *614 0.00298116
 *CONN
 *P wbs_dat_o[15] O
-*I *646:wbs_dat_o[15] I *D caravel_ips
+*I *646:wbs_dat_o[15] O *D caravel_ips
 *CAP
-1 wbs_dat_o[15] 0.00128282
-2 *646:wbs_dat_o[15] 0.00128282
-3 *646:wbs_adr_i[16] *646:wbs_dat_o[15] 0.000218151
-4 *646:wbs_dat_i[15] *646:wbs_dat_o[15] 0.000253345
-5 *646:wbs_dat_i[16] *646:wbs_dat_o[15] 0
+1 wbs_dat_o[15] 0.0012538
+2 *646:wbs_dat_o[15] 0.0012538
+3 *646:wbs_adr_i[16] wbs_dat_o[15] 0.000220209
+4 *646:wbs_dat_i[15] wbs_dat_o[15] 0.000253345
+5 *646:wbs_dat_i[16] wbs_dat_o[15] 0
 *RES
-1 wbs_dat_o[15] *646:wbs_dat_o[15] 17.7843 
+1 *646:wbs_dat_o[15] wbs_dat_o[15] 17.7843 
 *END
 
 *D_NET *615 0.00258831
 *CONN
 *P wbs_dat_o[16] O
-*I *646:wbs_dat_o[16] I *D caravel_ips
+*I *646:wbs_dat_o[16] O *D caravel_ips
 *CAP
 1 wbs_dat_o[16] 0.00122148
 2 *646:wbs_dat_o[16] 0.00122148
-3 *646:wbs_adr_i[16] *646:wbs_dat_o[16] 0
-4 *646:wbs_adr_i[17] *646:wbs_dat_o[16] 0
-5 *646:wbs_dat_i[16] *646:wbs_dat_o[16] 0.000145355
+3 *646:wbs_adr_i[16] wbs_dat_o[16] 0
+4 *646:wbs_adr_i[17] wbs_dat_o[16] 0
+5 *646:wbs_dat_i[16] wbs_dat_o[16] 0.000145355
 *RES
-1 wbs_dat_o[16] *646:wbs_dat_o[16] 16.5009 
+1 *646:wbs_dat_o[16] wbs_dat_o[16] 16.5009 
 *END
 
 *D_NET *616 0.00244569
 *CONN
 *P wbs_dat_o[17] O
-*I *646:wbs_dat_o[17] I *D caravel_ips
+*I *646:wbs_dat_o[17] O *D caravel_ips
 *CAP
 1 wbs_dat_o[17] 0.0011355
 2 *646:wbs_dat_o[17] 0.0011355
-3 *646:wbs_adr_i[18] *646:wbs_dat_o[17] 0.000111481
-4 *646:wbs_dat_i[17] *646:wbs_dat_o[17] 6.32198e-05
+3 *646:wbs_adr_i[18] wbs_dat_o[17] 0.000111481
+4 *646:wbs_dat_i[17] wbs_dat_o[17] 6.32198e-05
 *RES
-1 wbs_dat_o[17] *646:wbs_dat_o[17] 17.2062 
+1 *646:wbs_dat_o[17] wbs_dat_o[17] 17.2062 
 *END
 
 *D_NET *617 0.00228644
 *CONN
 *P wbs_dat_o[18] O
-*I *646:wbs_dat_o[18] I *D caravel_ips
+*I *646:wbs_dat_o[18] O *D caravel_ips
 *CAP
 1 wbs_dat_o[18] 0.0010852
 2 *646:wbs_dat_o[18] 0.0010852
-3 *646:wbs_adr_i[19] *646:wbs_dat_o[18] 4.55864e-06
-4 *646:wbs_dat_i[18] *646:wbs_dat_o[18] 0.000111481
+3 *646:wbs_adr_i[19] wbs_dat_o[18] 4.55864e-06
+4 *646:wbs_dat_i[18] wbs_dat_o[18] 0.000111481
 *RES
-1 wbs_dat_o[18] *646:wbs_dat_o[18] 17.3182 
+1 *646:wbs_dat_o[18] wbs_dat_o[18] 17.3182 
 *END
 
-*D_NET *618 0.00210877
+*D_NET *618 0.00203089
 *CONN
 *P wbs_dat_o[19] O
-*I *646:wbs_dat_o[19] I *D caravel_ips
+*I *646:wbs_dat_o[19] O *D caravel_ips
 *CAP
-1 wbs_dat_o[19] 0.00105439
-2 *646:wbs_dat_o[19] 0.00105439
+1 wbs_dat_o[19] 0.00101544
+2 *646:wbs_dat_o[19] 0.00101544
 *RES
-1 wbs_dat_o[19] *646:wbs_dat_o[19] 17.2016 
+1 *646:wbs_dat_o[19] wbs_dat_o[19] 18.5625 
 *END
 
 *D_NET *619 0.00657834
 *CONN
 *P wbs_dat_o[1] O
-*I *646:wbs_dat_o[1] I *D caravel_ips
+*I *646:wbs_dat_o[1] O *D caravel_ips
 *CAP
 1 wbs_dat_o[1] 0.00145394
 2 *646:wbs_dat_o[1] 0.00145394
-3 *646:wbs_dat_o[1] *646:wbs_dat_o[2] 0
-4 *646:wbs_dat_o[1] *646:wbs_sel_i[1] 0.00168118
-5 *646:wbs_dat_i[0] *646:wbs_dat_o[1] 0
-6 *646:wbs_dat_i[1] *646:wbs_dat_o[1] 0.00174075
-7 *646:wbs_dat_i[2] *646:wbs_dat_o[1] 0.000248529
+3 wbs_dat_o[1] wbs_dat_o[2] 0
+4 wbs_dat_o[1] *646:wbs_sel_i[1] 0.00168118
+5 *646:wbs_dat_i[0] wbs_dat_o[1] 0
+6 *646:wbs_dat_i[1] wbs_dat_o[1] 0.00174075
+7 *646:wbs_dat_i[2] wbs_dat_o[1] 0.000248529
 *RES
-1 wbs_dat_o[1] *646:wbs_dat_o[1] 19.9984 
+1 *646:wbs_dat_o[1] wbs_dat_o[1] 19.9984 
 *END
 
-*D_NET *620 0.00198536
+*D_NET *620 0.00190975
 *CONN
 *P wbs_dat_o[20] O
-*I *646:wbs_dat_o[20] I *D caravel_ips
+*I *646:wbs_dat_o[20] O *D caravel_ips
 *CAP
-1 wbs_dat_o[20] 0.000992679
-2 *646:wbs_dat_o[20] 0.000992679
+1 wbs_dat_o[20] 0.000954877
+2 *646:wbs_dat_o[20] 0.000954877
+3 *646:wbs_adr_i[21] wbs_dat_o[20] 0
 *RES
-1 wbs_dat_o[20] *646:wbs_dat_o[20] 17.4225 
+1 *646:wbs_dat_o[20] wbs_dat_o[20] 17.4225 
 *END
 
-*D_NET *621 0.00183424
+*D_NET *621 0.00183492
 *CONN
 *P wbs_dat_o[21] O
-*I *646:wbs_dat_o[21] I *D caravel_ips
+*I *646:wbs_dat_o[21] O *D caravel_ips
 *CAP
-1 wbs_dat_o[21] 0.000917118
-2 *646:wbs_dat_o[21] 0.000917118
-3 *646:wbs_adr_i[22] *646:wbs_dat_o[21] 0
+1 wbs_dat_o[21] 0.000917461
+2 *646:wbs_dat_o[21] 0.000917461
+3 *646:wbs_adr_i[22] wbs_dat_o[21] 0
 *RES
-1 wbs_dat_o[21] *646:wbs_dat_o[21] 16.7325 
+1 *646:wbs_dat_o[21] wbs_dat_o[21] 16.7325 
 *END
 
-*D_NET *622 0.00170816
+*D_NET *622 0.0017799
 *CONN
 *P wbs_dat_o[22] O
-*I *646:wbs_dat_o[22] I *D caravel_ips
+*I *646:wbs_dat_o[22] O *D caravel_ips
 *CAP
-1 wbs_dat_o[22] 0.000854079
-2 *646:wbs_dat_o[22] 0.000854079
+1 wbs_dat_o[22] 0.00088995
+2 *646:wbs_dat_o[22] 0.00088995
 *RES
-1 wbs_dat_o[22] *646:wbs_dat_o[22] 15.5925 
+1 *646:wbs_dat_o[22] wbs_dat_o[22] 15.5925 
 *END
 
 *D_NET *623 0.00163313
 *CONN
 *P wbs_dat_o[23] O
-*I *646:wbs_dat_o[23] I *D caravel_ips
+*I *646:wbs_dat_o[23] O *D caravel_ips
 *CAP
 1 wbs_dat_o[23] 0.000816567
 2 *646:wbs_dat_o[23] 0.000816567
 *RES
-1 wbs_dat_o[23] *646:wbs_dat_o[23] 14.9025 
+1 *646:wbs_dat_o[23] wbs_dat_o[23] 14.9025 
 *END
 
 *D_NET *624 0.00170114
 *CONN
 *P wbs_dat_o[24] O
-*I *646:wbs_dat_o[24] I *D caravel_ips
+*I *646:wbs_dat_o[24] O *D caravel_ips
 *CAP
 1 wbs_dat_o[24] 0.000850569
 2 *646:wbs_dat_o[24] 0.000850569
 *RES
-1 wbs_dat_o[24] *646:wbs_dat_o[24] 14.9025 
+1 *646:wbs_dat_o[24] wbs_dat_o[24] 14.9025 
 *END
 
 *D_NET *625 0.00170816
 *CONN
 *P wbs_dat_o[25] O
-*I *646:wbs_dat_o[25] I *D caravel_ips
+*I *646:wbs_dat_o[25] O *D caravel_ips
 *CAP
 1 wbs_dat_o[25] 0.000854079
 2 *646:wbs_dat_o[25] 0.000854079
 *RES
-1 wbs_dat_o[25] *646:wbs_dat_o[25] 15.5925 
+1 *646:wbs_dat_o[25] wbs_dat_o[25] 15.5925 
 *END
 
 *D_NET *626 0.00183374
 *CONN
 *P wbs_dat_o[26] O
-*I *646:wbs_dat_o[26] I *D caravel_ips
+*I *646:wbs_dat_o[26] O *D caravel_ips
 *CAP
 1 wbs_dat_o[26] 0.000916871
 2 *646:wbs_dat_o[26] 0.000916871
-3 *646:wbs_dat_i[26] *646:wbs_dat_o[26] 0
+3 *646:wbs_dat_i[26] wbs_dat_o[26] 0
 *RES
-1 wbs_dat_o[26] *646:wbs_dat_o[26] 16.7325 
+1 *646:wbs_dat_o[26] wbs_dat_o[26] 16.7325 
 *END
 
-*D_NET *627 0.00202767
+*D_NET *627 0.00194767
 *CONN
 *P wbs_dat_o[27] O
-*I *646:wbs_dat_o[27] I *D caravel_ips
+*I *646:wbs_dat_o[27] O *D caravel_ips
 *CAP
-1 wbs_dat_o[27] 0.00101384
-2 *646:wbs_dat_o[27] 0.00101384
+1 wbs_dat_o[27] 0.000973833
+2 *646:wbs_dat_o[27] 0.000973833
 *RES
-1 wbs_dat_o[27] *646:wbs_dat_o[27] 17.0851 
+1 *646:wbs_dat_o[27] wbs_dat_o[27] 17.8725 
 *END
 
 *D_NET *628 0.00211095
 *CONN
 *P wbs_dat_o[28] O
-*I *646:wbs_dat_o[28] I *D caravel_ips
+*I *646:wbs_dat_o[28] O *D caravel_ips
 *CAP
 1 wbs_dat_o[28] 0.00105548
 2 *646:wbs_dat_o[28] 0.00105548
-3 *646:wbs_dat_i[28] *646:wbs_dat_o[28] 0
+3 *646:wbs_dat_i[28] wbs_dat_o[28] 0
 *RES
-1 wbs_dat_o[28] *646:wbs_dat_o[28] 16.6282 
+1 *646:wbs_dat_o[28] wbs_dat_o[28] 16.6282 
 *END
 
 *D_NET *629 0.00248548
 *CONN
 *P wbs_dat_o[29] O
-*I *646:wbs_dat_o[29] I *D caravel_ips
+*I *646:wbs_dat_o[29] O *D caravel_ips
 *CAP
 1 wbs_dat_o[29] 0.00121437
 2 *646:wbs_dat_o[29] 0.00121437
-3 *646:wbs_adr_i[30] *646:wbs_dat_o[29] 5.21698e-05
-4 *646:wbs_dat_i[29] *646:wbs_dat_o[29] 4.55864e-06
+3 *646:wbs_adr_i[30] wbs_dat_o[29] 5.21698e-05
+4 *646:wbs_dat_i[29] wbs_dat_o[29] 4.55864e-06
 *RES
-1 wbs_dat_o[29] *646:wbs_dat_o[29] 17.3764 
+1 *646:wbs_dat_o[29] wbs_dat_o[29] 17.3764 
 *END
 
-*D_NET *630 0.00489948
+*D_NET *630 0.0050283
 *CONN
 *P wbs_dat_o[2] O
-*I *646:wbs_dat_o[2] I *D caravel_ips
+*I *646:wbs_dat_o[2] O *D caravel_ips
 *CAP
-1 wbs_dat_o[2] 0.00244974
-2 *646:wbs_dat_o[2] 0.00244974
-3 *646:wbs_dat_o[2] *646:wbs_sel_i[1] 0
-4 *646:wbs_dat_o[2] *646:wbs_sel_i[3] 0
-5 *646:wbs_dat_i[1] *646:wbs_dat_o[2] 0
-6 *646:wbs_dat_o[1] *646:wbs_dat_o[2] 0
+1 wbs_dat_o[2] 0.00251415
+2 *646:wbs_dat_o[2] 0.00251415
+3 wbs_dat_o[2] *646:wbs_sel_i[1] 0
+4 wbs_dat_o[2] *646:wbs_sel_i[3] 0
+5 wbs_dat_o[1] wbs_dat_o[2] 0
+6 *646:wbs_dat_i[1] wbs_dat_o[2] 0
 *RES
-1 wbs_dat_o[2] *646:wbs_dat_o[2] 18.7151 
+1 *646:wbs_dat_o[2] wbs_dat_o[2] 18.7151 
 *END
 
 *D_NET *631 0.00266586
 *CONN
 *P wbs_dat_o[30] O
-*I *646:wbs_dat_o[30] I *D caravel_ips
+*I *646:wbs_dat_o[30] O *D caravel_ips
 *CAP
 1 wbs_dat_o[30] 0.00124867
 2 *646:wbs_dat_o[30] 0.00124867
-3 *646:wbs_adr_i[31] *646:wbs_dat_o[30] 6.11552e-05
-4 *646:wbs_dat_i[30] *646:wbs_dat_o[30] 0.000107366
+3 *646:wbs_adr_i[31] wbs_dat_o[30] 6.11552e-05
+4 *646:wbs_dat_i[30] wbs_dat_o[30] 0.000107366
 *RES
-1 wbs_dat_o[30] *646:wbs_dat_o[30] 17.2062 
+1 *646:wbs_dat_o[30] wbs_dat_o[30] 17.2062 
 *END
 
 *D_NET *632 0.0026842
 *CONN
 *P wbs_dat_o[31] O
-*I *646:wbs_dat_o[31] I *D caravel_ips
+*I *646:wbs_dat_o[31] O *D caravel_ips
 *CAP
 1 wbs_dat_o[31] 0.00127055
 2 *646:wbs_dat_o[31] 0.00127055
-3 *646:wbs_dat_i[31] *646:wbs_dat_o[31] 0.000143096
+3 *646:wbs_dat_i[31] wbs_dat_o[31] 0.000143096
 *RES
-1 wbs_dat_o[31] *646:wbs_dat_o[31] 17.6678 
+1 *646:wbs_dat_o[31] wbs_dat_o[31] 17.6678 
 *END
 
-*D_NET *633 0.00552009
+*D_NET *633 0.0057138
 *CONN
 *P wbs_dat_o[3] O
-*I *646:wbs_dat_o[3] I *D caravel_ips
+*I *646:wbs_dat_o[3] O *D caravel_ips
 *CAP
-1 wbs_dat_o[3] 0.00140977
-2 *646:wbs_dat_o[3] 0.00140977
-3 *646:wbs_dat_o[3] *646:wbs_dat_o[4] 6.32198e-05
-4 *646:wbs_dat_o[3] *646:wbs_sel_i[3] 0
-5 *646:wbs_adr_i[3] *646:wbs_dat_o[3] 0.00101232
-6 *646:wbs_adr_i[4] *646:wbs_dat_o[3] 0
-7 *646:wbs_dat_i[3] *646:wbs_dat_o[3] 0.00148827
-8 *646:wbs_dat_i[4] *646:wbs_dat_o[3] 0.000136745
+1 wbs_dat_o[3] 0.0015461
+2 *646:wbs_dat_o[3] 0.0015461
+3 wbs_dat_o[3] wbs_dat_o[4] 6.32198e-05
+4 wbs_dat_o[3] *646:wbs_sel_i[3] 0
+5 *646:wbs_adr_i[3] wbs_dat_o[3] 0.000985203
+6 *646:wbs_adr_i[4] wbs_dat_o[3] 0
+7 *646:wbs_dat_i[3] wbs_dat_o[3] 0.00143866
+8 *646:wbs_dat_i[4] wbs_dat_o[3] 0.000134508
 *RES
-1 wbs_dat_o[3] *646:wbs_dat_o[3] 18.8354 
+1 *646:wbs_dat_o[3] wbs_dat_o[3] 18.8354 
 *END
 
 *D_NET *634 0.00457878
 *CONN
 *P wbs_dat_o[4] O
-*I *646:wbs_dat_o[4] I *D caravel_ips
+*I *646:wbs_dat_o[4] O *D caravel_ips
 *CAP
 1 wbs_dat_o[4] 0.00159185
 2 *646:wbs_dat_o[4] 0.00159185
-3 *646:wbs_dat_o[4] *646:wbs_dat_o[5] 0
-4 *646:wbs_adr_i[5] *646:wbs_dat_o[4] 0.00133186
-5 *646:wbs_adr_i[6] *646:wbs_dat_o[4] 0
-6 *646:wbs_dat_i[4] *646:wbs_dat_o[4] 0
-7 *646:wbs_dat_o[3] *646:wbs_dat_o[4] 6.32198e-05
+3 wbs_dat_o[4] wbs_dat_o[5] 0
+4 wbs_dat_o[3] wbs_dat_o[4] 6.32198e-05
+5 *646:wbs_adr_i[5] wbs_dat_o[4] 0.00133186
+6 *646:wbs_adr_i[6] wbs_dat_o[4] 0
+7 *646:wbs_dat_i[4] wbs_dat_o[4] 0
 *RES
-1 wbs_dat_o[4] *646:wbs_dat_o[4] 19.4158 
+1 *646:wbs_dat_o[4] wbs_dat_o[4] 19.4158 
 *END
 
 *D_NET *635 0.0044379
 *CONN
 *P wbs_dat_o[5] O
-*I *646:wbs_dat_o[5] I *D caravel_ips
+*I *646:wbs_dat_o[5] O *D caravel_ips
 *CAP
 1 wbs_dat_o[5] 0.00174269
 2 *646:wbs_dat_o[5] 0.00174269
-3 *646:wbs_dat_o[5] *646:wbs_dat_o[6] 0.000203895
-4 *646:wbs_adr_i[5] *646:wbs_dat_o[5] 0
-5 *646:wbs_adr_i[6] *646:wbs_dat_o[5] 0.000626615
-6 *646:wbs_adr_i[7] *646:wbs_dat_o[5] 0
-7 *646:wbs_dat_i[4] *646:wbs_dat_o[5] 0
-8 *646:wbs_dat_i[5] *646:wbs_dat_o[5] 0
-9 *646:wbs_dat_i[6] *646:wbs_dat_o[5] 0.000122012
-10 *646:wbs_dat_o[4] *646:wbs_dat_o[5] 0
+3 wbs_dat_o[5] wbs_dat_o[6] 0.000203895
+4 wbs_dat_o[4] wbs_dat_o[5] 0
+5 *646:wbs_adr_i[5] wbs_dat_o[5] 0
+6 *646:wbs_adr_i[6] wbs_dat_o[5] 0.000626615
+7 *646:wbs_adr_i[7] wbs_dat_o[5] 0
+8 *646:wbs_dat_i[4] wbs_dat_o[5] 0
+9 *646:wbs_dat_i[5] wbs_dat_o[5] 0
+10 *646:wbs_dat_i[6] wbs_dat_o[5] 0.000122012
 *RES
-1 wbs_dat_o[5] *646:wbs_dat_o[5] 19.2992 
+1 *646:wbs_dat_o[5] wbs_dat_o[5] 19.2992 
 *END
 
-*D_NET *636 0.00435503
+*D_NET *636 0.00424172
 *CONN
 *P wbs_dat_o[6] O
-*I *646:wbs_dat_o[6] I *D caravel_ips
+*I *646:wbs_dat_o[6] O *D caravel_ips
 *CAP
-1 wbs_dat_o[6] 0.0015461
-2 *646:wbs_dat_o[6] 0.0015461
-3 *646:wbs_adr_i[6] *646:wbs_dat_o[6] 0.000159734
-4 *646:wbs_adr_i[7] *646:wbs_dat_o[6] 0.000104868
-5 *646:wbs_dat_i[6] *646:wbs_dat_o[6] 0.000398904
-6 *646:wbs_dat_i[7] *646:wbs_dat_o[6] 0.000395438
-7 *646:wbs_dat_o[5] *646:wbs_dat_o[6] 0.000203895
+1 wbs_dat_o[6] 0.00147377
+2 *646:wbs_dat_o[6] 0.00147377
+3 wbs_dat_o[5] wbs_dat_o[6] 0.000203895
+4 *646:wbs_adr_i[6] wbs_dat_o[6] 0.000174255
+5 *646:wbs_adr_i[7] wbs_dat_o[6] 0.000104868
+6 *646:wbs_dat_i[6] wbs_dat_o[6] 0.000415733
+7 *646:wbs_dat_i[7] wbs_dat_o[6] 0.000395438
 *RES
-1 wbs_dat_o[6] *646:wbs_dat_o[6] 18.3692 
+1 *646:wbs_dat_o[6] wbs_dat_o[6] 18.3692 
 *END
 
 *D_NET *637 0.00429046
 *CONN
 *P wbs_dat_o[7] O
-*I *646:wbs_dat_o[7] I *D caravel_ips
+*I *646:wbs_dat_o[7] O *D caravel_ips
 *CAP
 1 wbs_dat_o[7] 0.00145895
 2 *646:wbs_dat_o[7] 0.00145895
-3 *646:wbs_dat_o[7] *646:wbs_dat_o[8] 0.000112384
-4 *646:wbs_adr_i[8] *646:wbs_dat_o[7] 0.000241666
-5 *646:wbs_dat_i[7] *646:wbs_dat_o[7] 0.00101851
+3 wbs_dat_o[7] wbs_dat_o[8] 0.000112384
+4 *646:wbs_adr_i[8] wbs_dat_o[7] 0.000241666
+5 *646:wbs_dat_i[7] wbs_dat_o[7] 0.00101851
 *RES
-1 wbs_dat_o[7] *646:wbs_dat_o[7] 18.6629 
+1 *646:wbs_dat_o[7] wbs_dat_o[7] 18.6629 
 *END
 
 *D_NET *638 0.00431978
 *CONN
 *P wbs_dat_o[8] O
-*I *646:wbs_dat_o[8] I *D caravel_ips
+*I *646:wbs_dat_o[8] O *D caravel_ips
 *CAP
 1 wbs_dat_o[8] 0.00131081
 2 *646:wbs_dat_o[8] 0.00131081
-3 *646:wbs_dat_o[8] *646:wbs_dat_o[9] 0.000125633
-4 *646:wbs_adr_i[8] *646:wbs_dat_o[8] 0.000482312
-5 *646:wbs_adr_i[9] *646:wbs_dat_o[8] 0.000905808
-6 *646:wbs_dat_i[8] *646:wbs_dat_o[8] 0
-7 *646:wbs_dat_i[9] *646:wbs_dat_o[8] 7.20267e-05
-8 *646:wbs_dat_o[7] *646:wbs_dat_o[8] 0.000112384
+3 wbs_dat_o[8] wbs_dat_o[9] 0.000125633
+4 wbs_dat_o[7] wbs_dat_o[8] 0.000112384
+5 *646:wbs_adr_i[8] wbs_dat_o[8] 0.000482312
+6 *646:wbs_adr_i[9] wbs_dat_o[8] 0.000905808
+7 *646:wbs_dat_i[8] wbs_dat_o[8] 0
+8 *646:wbs_dat_i[9] wbs_dat_o[8] 7.20267e-05
 *RES
-1 wbs_dat_o[8] *646:wbs_dat_o[8] 18.8331 
+1 *646:wbs_dat_o[8] wbs_dat_o[8] 18.8331 
 *END
 
 *D_NET *639 0.00366304
 *CONN
 *P wbs_dat_o[9] O
-*I *646:wbs_dat_o[9] I *D caravel_ips
+*I *646:wbs_dat_o[9] O *D caravel_ips
 *CAP
 1 wbs_dat_o[9] 0.00153763
 2 *646:wbs_dat_o[9] 0.00153763
-3 *646:wbs_adr_i[9] *646:wbs_dat_o[9] 0
-4 *646:wbs_dat_i[9] *646:wbs_dat_o[9] 0.000456037
-5 *646:wbs_dat_o[10] *646:wbs_dat_o[9] 6.11347e-06
-6 *646:wbs_dat_o[8] *646:wbs_dat_o[9] 0.000125633
+3 wbs_dat_o[10] wbs_dat_o[9] 6.11347e-06
+4 wbs_dat_o[8] wbs_dat_o[9] 0.000125633
+5 *646:wbs_adr_i[9] wbs_dat_o[9] 0
+6 *646:wbs_dat_i[9] wbs_dat_o[9] 0.000456037
 *RES
-1 wbs_dat_o[9] *646:wbs_dat_o[9] 17.5497 
+1 *646:wbs_dat_o[9] wbs_dat_o[9] 17.5497 
 *END
 
 *D_NET *640 0.0064477
@@ -3185,8 +3194,8 @@ wbs_we_i I
 1 wbs_sel_i[0] 0.00148751
 2 *646:wbs_sel_i[0] 0.00148751
 3 *646:wbs_sel_i[0] *646:wbs_we_i 0.000235521
-4 *646:wbs_dat_i[1] *646:wbs_sel_i[0] 0.0013651
-5 *646:wbs_dat_o[0] *646:wbs_sel_i[0] 0.00187207
+4 wbs_dat_o[0] *646:wbs_sel_i[0] 0.00187207
+5 *646:wbs_dat_i[1] *646:wbs_sel_i[0] 0.0013651
 *RES
 1 wbs_sel_i[0] *646:wbs_sel_i[0] 19.8865 
 *END
@@ -3198,40 +3207,41 @@ wbs_we_i I
 *CAP
 1 wbs_sel_i[1] 0.00185413
 2 *646:wbs_sel_i[1] 0.00185413
-3 *646:wbs_adr_i[1] *646:wbs_sel_i[1] 0
-4 *646:wbs_dat_i[2] *646:wbs_sel_i[1] 0.000180593
-5 *646:wbs_dat_o[0] *646:wbs_sel_i[1] 0
-6 *646:wbs_dat_o[1] *646:wbs_sel_i[1] 0.00168118
-7 *646:wbs_dat_o[2] *646:wbs_sel_i[1] 0
+3 wbs_dat_o[0] *646:wbs_sel_i[1] 0
+4 wbs_dat_o[1] *646:wbs_sel_i[1] 0.00168118
+5 wbs_dat_o[2] *646:wbs_sel_i[1] 0
+6 *646:wbs_adr_i[1] *646:wbs_sel_i[1] 0
+7 *646:wbs_dat_i[2] *646:wbs_sel_i[1] 0.000180593
 *RES
 1 wbs_sel_i[1] *646:wbs_sel_i[1] 19.9402 
 *END
 
-*D_NET *642 0.00575716
+*D_NET *642 0.00587385
 *CONN
 *P wbs_sel_i[2] I
 *I *646:wbs_sel_i[2] I *D caravel_ips
 *CAP
-1 wbs_sel_i[2] 0.00158346
-2 *646:wbs_sel_i[2] 0.00158346
+1 wbs_sel_i[2] 0.00165536
+2 *646:wbs_sel_i[2] 0.00165536
 3 *646:wbs_sel_i[2] *646:wbs_sel_i[3] 0.000715416
 4 *646:wbs_adr_i[2] *646:wbs_sel_i[2] 0.000623537
 5 *646:wbs_dat_i[2] *646:wbs_sel_i[2] 0.000196248
-6 *646:wbs_dat_i[3] *646:wbs_sel_i[2] 0.00105505
+6 *646:wbs_dat_i[3] *646:wbs_sel_i[2] 0.00102793
 *RES
 1 wbs_sel_i[2] *646:wbs_sel_i[2] 19.7654 
 *END
 
-*D_NET *643 0.00475614
+*D_NET *643 0.00501037
 *CONN
 *P wbs_sel_i[3] I
 *I *646:wbs_sel_i[3] I *D caravel_ips
 *CAP
-1 wbs_sel_i[3] 0.00202036
-2 *646:wbs_sel_i[3] 0.00202036
-3 *646:wbs_dat_o[2] *646:wbs_sel_i[3] 0
-4 *646:wbs_dat_o[3] *646:wbs_sel_i[3] 0
-5 *646:wbs_sel_i[2] *646:wbs_sel_i[3] 0.000715416
+1 wbs_sel_i[3] 0.00214748
+2 *646:wbs_sel_i[3] 0.00214748
+3 wbs_dat_o[2] *646:wbs_sel_i[3] 0
+4 wbs_dat_o[3] *646:wbs_sel_i[3] 0
+5 *646:wbs_adr_i[4] *646:wbs_sel_i[3] 0
+6 *646:wbs_sel_i[2] *646:wbs_sel_i[3] 0.000715416
 *RES
 1 wbs_sel_i[3] *646:wbs_sel_i[3] 19.5906 
 *END
@@ -3244,8 +3254,8 @@ wbs_we_i I
 1 wbs_stb_i 0.00163765
 2 *646:wbs_stb_i 0.00163765
 3 *646:wbs_stb_i *646:wbs_we_i 0.00193439
-4 *646:wbs_cyc_i *646:wbs_stb_i 0.00195791
-5 *646:wbs_dat_o[0] *646:wbs_stb_i 0.000180019
+4 wbs_dat_o[0] *646:wbs_stb_i 0.000180019
+5 *646:wbs_cyc_i *646:wbs_stb_i 0.00195791
 *RES
 1 wbs_stb_i *646:wbs_stb_i 20.4063 
 *END
@@ -3257,10 +3267,10 @@ wbs_we_i I
 *CAP
 1 wbs_we_i 0.00186575
 2 *646:wbs_we_i 0.00186575
-3 *646:wb_rst_i *646:wbs_we_i 0
-4 *646:wbs_adr_i[0] *646:wbs_we_i 0
-5 *646:wbs_adr_i[1] *646:wbs_we_i 0.000451783
-6 *646:wbs_dat_o[0] *646:wbs_we_i 2.5773e-06
+3 wbs_dat_o[0] *646:wbs_we_i 2.5773e-06
+4 *646:wb_rst_i *646:wbs_we_i 0
+5 *646:wbs_adr_i[0] *646:wbs_we_i 0
+6 *646:wbs_adr_i[1] *646:wbs_we_i 0.000451783
 7 *646:wbs_sel_i[0] *646:wbs_we_i 0.000235521
 8 *646:wbs_stb_i *646:wbs_we_i 0.00193439
 *RES

@@ -76,8 +76,8 @@
     wire [3:0]  psram_din;
     wire [3:0]  psram_dout;
     wire [3:0]  psram_douten;  
-    wire        ctr_in;    
-    wire        pwm_out;
+    // wire        ctr_in;    
+    // wire        pwm_out;
     wire        uart_tx;
     wire        uart_rx;
 
@@ -95,7 +95,7 @@
                                     wbs_stb_psram_i ?   wbs_dat_psram_o :
                                     32'hDEADBEEF;
 
-    ms_psram_ctrl_wb psram (
+    EF_PSRAM_CTRL_wb psram (
         .clk_i(wb_clk_i),
         .rst_i(wb_rst_i),
         .adr_i(wbs_adr_i),
@@ -114,7 +114,7 @@
         .douten(psram_douten)     
     );
 
-    ms_tmr32_wb timer (
+    EF_TCC32_wb timer (
         .clk_i(wb_clk_i),
         .rst_i(wb_rst_i),
         .adr_i(wbs_adr_i),
@@ -126,13 +126,13 @@
         .ack_o(wbs_ack_tmr_o),
         .we_i(wbs_we_i),
 
-        .ctr_in(ctr_in),
-        .pwm_out(pwm_out),
+        // .ctr_in(ctr_in),
+        // .pwm_out(pwm_out),
         
         .irq(irq[0])
     );
 
-    ms_uart_wb uart (
+    EF_UART_wb uart (
         .clk_i(wb_clk_i),
         .rst_i(wb_rst_i),
         .adr_i(wbs_adr_i),
@@ -157,9 +157,9 @@
     assign io_oeb[6]       = 1'b0;                 // Output
 
     // Timer
-    assign ctr_in           = io_in[5];            // I/O 33
+    // assign ctr_in           = io_in[5];            // I/O 33
     assign io_oeb[5]       = 1'b1;                 // Input
-    assign io_out[4]       = pwm_out;              // I/O 32
+    // assign io_out[4]       = pwm_out;              // I/O 32
     assign io_oeb[4]       = 1'b0;                 // Output
 
     // PSRAM CTRL
